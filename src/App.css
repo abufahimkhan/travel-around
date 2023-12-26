@@ -15,12 +15,7 @@ p {
   color: #000000;
   /* Adjust font size as needed */
 }
-/* "acumin-pro"
-"Acumin Pro"
-"Helvetica Neue"
-"Helvetica"
-"Arial"
-"sans-serif"; */
+
 /* Container styles */
 .container {
   max-width: 100%;
@@ -101,7 +96,6 @@ p {
   opacity: 1; /* Change opacity to 1 to make the input visible */
 }
 
-
 .start-button {
   background-color: #2596FC;
   color: #ddd;
@@ -110,7 +104,7 @@ p {
   font-size: 16px;
   width: 120px;
   height: 33px;
-  border: 2px solid #2596FC; 
+  border: 2px solid #2596FC;
   border-radius: 2cap;
   position: relative;
   overflow: hidden;
@@ -147,7 +141,7 @@ p {
   display: flex;
 }
 
-/* Media query for screens smaller than 600px */
+/* Media query for screens smaller than 1600px */
 @media (max-width: 1600px) {
   .nav {
     display: none;
@@ -213,6 +207,7 @@ p {
   display: flex;
   padding: 5%;
 }
+
 .section-cover {
   display: flex;
   flex-direction: column;
@@ -222,17 +217,20 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .section-cover-one {
   width: fit-content;
   justify-content: left;
   padding: 2%;
 }
+
 .section-cover-one h1 {
   font-family: "Helvetica";
   font-style: normal;
   font-size: 65px;
   color: #5f5f5f;
 }
+
 .section-cover-one p {
   font-family: "Helvetica";
   font-size: 25px;
@@ -240,6 +238,7 @@ p {
   margin-bottom: 40px;
   color: #666666;
 }
+
 .learn-button {
   width: 180px;
   height: 60px;
@@ -250,6 +249,7 @@ p {
   color: rgb(3, 3, 3) 3b3;
   cursor: pointer;
 }
+
 .section-one-image {
   margin-top: 10%;
   width: 100%;
@@ -257,6 +257,7 @@ p {
   border-radius: 3cap;
   justify-content: right;
 }
+
 .learn-more-btn {
   width: 150px;
   height: 50px;
@@ -267,15 +268,18 @@ p {
   cursor: pointer;
   margin-left: 100px;
 }
+
 .section-cover-two {
   padding: 2%;
   width: fit-content;
 }
+
 .section-two-image {
   width: 100%;
   height: fit-content;
   border-radius: 3cap;
 }
+
 /* Add this style to your existing CSS file */
 .overlay-image {
   position: absolute;
@@ -286,8 +290,9 @@ p {
   transform: translate(-50%, -50%);
   z-index: 1;
 }
+
 /* Media query for screens smaller than 1200px */
-@media screen and (max-width: 1600px) {
+@media (max-width: 1600px) {
   .section-cover-container {
     flex-direction: column;
     align-items: center;
@@ -317,76 +322,6 @@ p {
   .section-cover-two {
     display: none;
   }
-}
-/* 
- .search-content {
-  display: flex;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  z-index: 1;
-  padding: 4cap;
-  margin-left: 30cap;
-  margin-right: 30cap;
-  background-color: #f9f9f9;
-  border-radius: 10cap;
-  gap: 3cap;
-}
-.search-content p {
-  color: seagreen;
-  font-weight: 600;
-  font-family: "Helvetica";
-}
-.icon_one {
-  border-radius: 150cap;
-  padding: 15px;
-  background-color: #e0dede;
-  height: 40px;
-  width: 40px;
-}
-.icon_two {
-  border-radius: 150cap;
-  padding: 15px;
-  background-color: #e0dede;
-  height: 40px;
-  width: 40px;
-}
-.icon_three {
-  border-radius: 150cap;
-  padding: 15px;
-  background-color: #e0dede;
-  height: 40px;
-  width: 40px;
-}
-.option {
-  border: 1px solid white;
-  width: 15cap;
-}
-.search-btn {
-  border-radius: 4cap;
-  width: 140px;
-  background-color: #2596fc;
-  margin-left: 50px;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: medium;
-}
-.search-overlay {
-  z-index: 1;
-  margin: -200px;
-} */
-/* Media query for screens smaller than 600px */
-@media (max-width: 1600px) {
-  .overlay-image {
-    top: 40%;
-  }
-}
-
-/* Horizontal line styles */
-hr {
-  width: 100%;
-  height: 1px;
-  background-color: #ddd;
-  border: none;
-  margin: 10px 0;
 }
 
 /* Cards section*/
@@ -441,7 +376,8 @@ hr {
   font-size: 18px;
   color: #666666;
 }
-.title{
+
+.title {
   display: flex;
   margin-left: 35px;
   font-size: 16px;
@@ -471,8 +407,9 @@ hr {
   display: block;
   cursor: pointer;
 }
+
 .seemore:hover,
-.seemore:focus{
+.seemore:focus {
   background-color: #0077ff;
   color: #e0efff;
   transform: scale(1.01);
@@ -502,11 +439,13 @@ hr {
   display: block;
   text-align: center;
 }
-.cards-content{
+
+.cards-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .cards-header h1 {
   font-family: "Helvetica";
   font-style: normal;
@@ -524,9 +463,8 @@ hr {
   margin-bottom: 40px;
 }
 
-/* Media query for screens smaller than 600px for cards */
-
-@media screen and (max-width: 1000px ) {
+/* Media query for screens smaller than 1000px */
+@media screen and (max-width: 1600px) {
   .cards-container {
     flex-direction: column;
     align-items: center;
@@ -537,40 +475,43 @@ hr {
   .cards {
     width: 60%;
   }
-  
 }
 
-@media screen and (max-width: 414px ) {
+/* Media query for screens smaller than 414px */
+@media screen and (max-width: 414px) {
   .cards-container {
     flex-direction: column;
     align-items: center;
     padding: 1%;
     gap: 1cap;
-  
+  }
 
   .cards {
     width: 100%;
   }
-  
 }
-}
-.service-title{
+
+.service-title {
   display: flex;
   justify-content: center;
   font-size: 30px;
   margin-top: 5px;
   color: rgb(122, 122, 122);
 }
-.service-container{
+
+.service-container {
   background-color: #eeeded;
   border-radius: 2cap;
   padding: 10px;
 }
-/* ... (Your existing CSS code below) */.feedback-slider {
+
+/* ... (Your existing CSS code below) */
+.feedback-slider {
   margin: 30px 0;
   max-width: 800px;
   margin: auto;
 }
+
 .feedback-slider {
   margin: 20px 0;
   max-width: 800px;
@@ -596,11 +537,12 @@ hr {
 .feedback-item div {
   flex: 1; /* Take remaining space */
 }
+
 .rating {
   margin-left: 25px;
   font-size: 18px;
   width: fit-content;
-  background-color:green;
+  background-color: green;
   color: #ffffff;
   padding: 5px 10px;
   border-radius: 5cap;
@@ -723,6 +665,267 @@ hr {
   opacity: 1;
   transition: 0s;
 }
+/* Media query for Mobile devices: 320px - 480px */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .explore-container {
+    max-width: 90%;
+    margin-top: 40px;
+    padding: 15px;
+  }
+
+  .explore {
+    padding: 30px;
+  }
+
+  .explore input {
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    padding: 3%;
+    border-radius: 15px;
+    border-radius: 999em 40px 40px 999em;
+    border: 0px solid aliceblue;
+    outline: none; /* Remove the default focus outline */
+  }
+
+  .explore #search::placeholder {
+    font-size: 16px;
+    padding: 3%;
+  }
+
+  .explore button {
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+    border-radius: 15px;
+    border-radius: 40px 999em 999em 40px;
+    border: 2px solid #2596FC; /* Set border color to match the input field border color */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+}
+
+/* Media query for Laptop or small-size screen: 769px - 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .explore-container {
+    max-width: 85%;
+    margin-top: 55px;
+    padding: 22px;
+  }
+
+  .explore {
+    padding: 45px;
+  }
+
+  .explore input {
+    width: 100%;
+    height: 90px;
+    font-size: 20px;
+    padding: 4%;
+    border-radius: 25px;
+    border-radius: 999em 40px 40px 999em;
+    border: 0px solid aliceblue;
+    outline: none; /* Remove the default focus outline */
+  }
+
+  .explore #search::placeholder {
+    font-size: 20px;
+    padding: 4%;
+  }
+
+  .explore button {
+    width: 260px;
+    height: 90px;
+    font-size: 20px;
+    border-radius: 25px;
+    border-radius: 40px 999em 999em 40px;
+    border: 2px solid #2596FC; /* Set border color to match the input field border color */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+}
+
+/* Media query for Desktop or large-size screen: 1025px - 1200px */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+  .explore-container {
+    max-width: 90%;
+    margin-top: 70px;
+    padding: 30px;
+  }
+
+  .explore {
+    padding: 60px;
+  }
+
+  .explore input {
+    width: 100%;
+    height: 110px;
+    font-size: 24px;
+    padding: 4%;
+    border-radius: 35px;
+    border-radius: 999em 40px 40px 999em;
+    border: 0px solid aliceblue;
+    outline: none; /* Remove the default focus outline */
+  }
+
+  .explore #search::placeholder {
+    font-size: 24px;
+    padding: 4%;
+  }
+
+  .explore button {
+    width: 280px;
+    height: 110px;
+    font-size: 24px;
+    border-radius: 35px;
+    border-radius: 40px 999em 999em 40px;
+    border: 2px solid #2596FC; /* Set border color to match the input field border color */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+}
+
+/* For Extra-large size devices: 1201px and more */
+@media screen and (min-width: 1201px) {
+  /* Add your styles for Extra-large size devices if needed */
+
+  .explore-container {
+    max-width: 70%;
+    margin-top: 80px;
+    padding: 35px;
+  }
+
+  .explore {
+    padding: 70px;
+  }
+
+  .explore input {
+    width: 100%;
+    height: 120px;
+    font-size: 28px;
+    padding: 4%;
+    border-radius: 40px;
+    border-radius: 999em 40px 40px 999em;
+    border: 0px solid aliceblue;
+    outline: none; /* Remove the default focus outline */
+  }
+
+  .explore #search::placeholder {
+    font-size: 28px;
+    padding: 4%;
+  }
+
+  .explore button {
+    width: 300px;
+    height: 120px;
+    font-size: 28px;
+    border-radius: 40px;
+    border-radius: 40px 999em 999em 40px;
+    border: 2px solid #2596FC; /* Set border color to match the input field border color */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 80px; /* Adjust the width as needed */
+  height: 80px; /* Adjust the height as needed */
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.footer-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-description,
+.footer-resources {
+  font-size: 14px;
+}
+
+.footer-resources li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.footer-resources a {
+  text-decoration: none;
+  color: #2596FC;
+}
+
+.footer-resources a:hover {
+  text-decoration: underline;
+}
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+  }
+}
+
+/* For Tablet View */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    margin-bottom: 20px;
+  }
+}
+
+/* For Mobile View */
+@media screen and (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    margin-bottom: 20px;
+  }
+
+  .footer-logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer-title {
+    font-size: 16px;
+  }
+
+  .footer-description,
+  .footer-resources {
+    font-size: 12px;
+  }
+}
+
+
+/* Media query for Extra-large size devices: 1201px and more */
+@media screen and (min-width: 1201px) {
+  /* Adjust styles for Extra-large size devices if needed */
+}
+
 /* Responsive columns */
 @media screen and (max-width: 600px) {
   .cards {
@@ -741,3 +944,59 @@ hr {
     margin-bottom: 10px;
   }
 }
+
+/* 
+ .search-content {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 1;
+  padding: 4cap;
+  margin-left: 30cap;
+  margin-right: 30cap;
+  background-color: #f9f9f9;
+  border-radius: 10cap;
+  gap: 3cap;
+}
+.search-content p {
+  color: seagreen;
+  font-weight: 600;
+  font-family: "Helvetica";
+}
+.icon_one {
+  border-radius: 150cap;
+  padding: 15px;
+  background-color: #e0dede;
+  height: 40px;
+  width: 40px;
+}
+.icon_two {
+  border-radius: 150cap;
+  padding: 15px;
+  background-color: #e0dede;
+  height: 40px;
+  width: 40px;
+}
+.icon_three {
+  border-radius: 150cap;
+  padding: 15px;
+  background-color: #e0dede;
+  height: 40px;
+  width: 40px;
+}
+.option {
+  border: 1px solid white;
+  width: 15cap;
+}
+.search-btn {
+  border-radius: 4cap;
+  width: 140px;
+  background-color: #2596fc;
+  margin-left: 50px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: medium;
+}
+.search-overlay {
+  z-index: 1;
+  margin: -200px;
+} */

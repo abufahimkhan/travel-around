@@ -126,7 +126,7 @@ function App() {
         <p>Unleash your Wanderlust with travel around</p>
       </div>
       <Placecards />
-
+      <hr />
       <div className="service-container">
         <div className="cards-header">
           <h1>Our Services</h1>
@@ -135,6 +135,7 @@ function App() {
 
         <Servicecards />
       </div>
+      <hr />
       <div className="feedback-slider-container">
         <div className="cards-header">
           <h1>Love From Our Travellers</h1>
@@ -143,7 +144,7 @@ function App() {
         <FeedbackSlider />
       </div>
      
-        
+
         <div className="explore-container">
         
           <div className="cards-header">
@@ -161,11 +162,45 @@ function App() {
               </button>
           </div>
         </div>
-       
-
+        <hr />
         <footer className="footer">
-          <p>&copy; 2023 Your Company</p>
+      <div className="footer-column">
+        <div className="footer-logo">
+        <img className="logo" src={logo} alt="Logo" />
+        </div>
+        <p className="footer-description">Your logo description goes here.</p>
+      </div>
+
+      <div className="footer-column">
+        <h3 className="footer-title">Resources 1</h3>
+        <ul className="footer-resources">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </div>
+
+      <div className="footer-column">
+        <h3 className="footer-title">Resources 2</h3>
+        <ul className="footer-resources">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </div>
+
+      <div className="footer-column">
+        <h3 className="footer-title">Resources 3</h3>
+        <ul className="footer-resources">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </div>
+     
+          
         </footer>
+        <p>&copy; 2023 Your Company</p>
       </div>
 
     
