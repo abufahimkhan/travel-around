@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "rating": 4.5,
+    "author": "Jayme Petracci",
+    "content": "This feedback is truly awesome! This feedback is truly awesome! This feedback is truly awesome! This feedback is truly awesome! It has been a pleasure using your service. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt nulla nec mauris pellentesque congue.",
+    "imgSrc": "https://randomuser.me/api/portraits/men/46.jpg"
+  },
+  {
+    "id": 2,
+    "rating": 4.5,
+    "author": "Liuka Kivell",
+    "content": "The tutorials provided are the best! They have been extremely helpful in guiding us through complex processes. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt nulla nec mauris pellentesque congue.",
+    "imgSrc": "https://randomuser.me/api/portraits/men/48.jpg"
+  },
+  {
+    "id": 3,
+    "rating": 4.5,
+    "author": "Chrysler Grinikhinov",
+    "content": "Our revenue increased by 50% after implementing your solutions. We appreciate the expertise and support. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt nulla nec mauris pellentesque congue.",
+    "imgSrc": "https://randomuser.me/api/portraits/men/49.jpg"
+  },
+  {
+    "id": 4,
+    "rating": 4.5,
+    "author": "Kessiah Cornbell",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt nulla nec mauris pellentesque congue. Sed at tellus quam. Aliquam erat volutpat.",
+    "imgSrc": "https://randomuser.me/api/portraits/men/50.jpg"
+  },
+  {
+    "id": 5,
+    "rating": 4.5,
+    "author": "Kessiah Cornbell",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt nulla nec mauris pellentesque congue. Sed at tellus quam. Aliquam erat volutpat.",
+    "imgSrc": "https://randomuser.me/api/portraits/men/50.jpg"
+  },
+  {
+    "id": 6,
+    "rating": 4.5,
+    "author": "Kessiah Cornbell",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt nulla nec mauris pellentesque congue. Sed at tellus quam. Aliquam erat volutpat.",
+    "imgSrc": "https://randomuser.me/api/portraits/men/50.jpg"
+  },
+  {
+    "id": 7,
+    "rating": 4.5,
+    "author": "Kessiah Cornbell",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt nulla nec mauris pellentesque congue. Sed at tellus quam. Aliquam erat volutpat.",
+    "imgSrc": "https://randomuser.me/api/portraits/men/50.jpg"
+  },
+  {
+    "id": 8,
+    "rating": 4.5,
+    "author": "Kessiah Cornbell",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt nulla nec mauris pellentesque congue. Sed at tellus quam. Aliquam erat volutpat.",
+    "imgSrc": "https://randomuser.me/api/portraits/men/50.jpg"
+  },
+  {
+    "id": 9,
+    "rating": 4.5,
+    "author": "Kessiah Cornbell",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt nulla nec mauris pellentesque congue. Sed at tellus quam. Aliquam erat volutpat.",
+    "imgSrc": "https://randomuser.me/api/portraits/men/50.jpg"
+  },
+  {
+    "id": 10,
+    "rating": 4.5,
+    "author": "Wash Pont",
+    "content": "We received the best overall service from your team. It has significantly improved our operations. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt nulla nec mauris pellentesque congue.",
+    "imgSrc": "https://randomuser.me/api/portraits/men/51.jpg"
+  }
+]
