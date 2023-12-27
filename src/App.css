@@ -7,220 +7,230 @@ body,
 h1,
 h2,
 p {
-  font-family: "Helvetica";
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  color: #000000;
-  /* Adjust font size as needed */
+    font-family: "Helvetica";
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    /* Adjust font size as needed */
 }
 
 /* Container styles */
 .container {
-  max-width: 100%;
-  background-color: #f9f9f9;
-  margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
-  position: relative;
-  overflow-x: hidden;
+    max-width: 100%;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
 }
 
 /* Header styles */
 .header {
-  position: sticky;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #f8f8f8;
-  color: #000000;
-  z-index: 1000;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8f8f8;
+    color: #000000;
+    z-index: 1000;
 }
 
 .logo {
-  width: 380px;
-  height: 120px;
+    width: 380px;
+    height: 120px;
 }
 
 .menu-items {
-  padding-top: 15px;
-  list-style: none;
-  display: flex;
-  gap: 60px;
+    padding-top: 15px;
+    list-style: none;
+    display: flex;
+    gap: 60px;
 }
 
 .menu-items li a {
-  text-decoration: none;
-  color: rgb(122, 122, 122);
-  font-size: 20px;
-  font-weight: 550; /* Make the text bold */
-  transition: color 0.3s; /* Add a transition for smooth color change */
+    text-decoration: none;
+    color: rgb(122, 122, 122);
+    font-size: 20px;
+    font-weight: 550;
+    /* Make the text bold */
+    transition: color 0.3s;
+    /* Add a transition for smooth color change */
 }
 
 .menu-items li a:hover {
-  color: #0698f7; /* Change the color on hover */
+    color: #0698f7;
+    /* Change the color on hover */
 }
 
 .search-menubar {
-  width: 15%;
-  height: 35px;
-  border-radius: 15cap; /* Make the search bar more round */
-  margin-right: 0px;
-  padding: 5px;
+    width: 15%;
+    height: 35px;
+    border-radius: 15cap;
+    /* Make the search bar more round */
+    margin-right: 0px;
+    padding: 5px;
 }
 
 .search-icon {
-  display: inline-flex;
-  width: 50px;
-  height: 20px;
-  color: rgb(133, 132, 132);
-  font-weight: bold; /* Add this line to make the icon bolder */
+    display: inline-flex;
+    width: 50px;
+    height: 20px;
+    color: rgb(133, 132, 132);
+    font-weight: bold;
+    /* Add this line to make the icon bolder */
 }
 
 .search-input {
-  font-size: 14px;
-  width: 200px;
-  max-width: 0;
-  padding: 5px;
-  transition: all 0.5s ease;
-  opacity: 0;
-  outline: #666666;
-  border: 1px solid #666666; /* Add border to make the input visible */
-  border-radius: 10px; /* Add border-radius for a more rounded look */
+    font-size: 14px;
+    width: 200px;
+    max-width: 0;
+    padding: 5px;
+    transition: all 0.5s ease;
+    opacity: 0;
+    outline: #666666;
+    border: 1px solid #666666;
+    /* Add border to make the input visible */
+    border-radius: 10px;
+    /* Add border-radius for a more rounded look */
 }
 
 .search-expanded {
-  max-width: 200px;
-  opacity: 1; /* Change opacity to 1 to make the input visible */
+    max-width: 200px;
+    opacity: 1;
+    /* Change opacity to 1 to make the input visible */
 }
 
 .start-button {
-  background-color: #2596FC;
-  color: #ddd;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  width: 120px;
-  height: 33px;
-  border: 2px solid #2596FC;
-  border-radius: 2cap;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    background-color: #2596FC;
+    color: #ddd;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    width: 120px;
+    height: 33px;
+    border: 2px solid #2596FC;
+    border-radius: 2cap;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .start-button:after {
-  content: "";
-  background: #ffffff; /* Set overlay color */
-  display: block;
-  position: absolute;
-  padding-top: 300%;
-  padding-left: 350%;
-  margin-left: -20px;
-  margin-top: -120%;
-  opacity: 0;
-  transition: all 0.8s;
+    content: "";
+    background: #ffffff;
+    /* Set overlay color */
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
 }
 
 .start-button:hover {
-  background-color: #1f7fd4; /* Change background color on hover */
+    background-color: #1f7fd4;
+    /* Change background color on hover */
 }
 
 .start-button:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
 }
 
 /* Navigation styles */
 .nav {
-  display: flex;
+    display: flex;
 }
 
 /* Media query for screens smaller than 1600px */
 @media (max-width: 1600px) {
-  .nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    padding: 10px;
-    left: 0;
-    width: 100%;
-    background-color: #e2e1e1;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        padding: 10px;
+        left: 0;
+        width: 100%;
+        background-color: #e2e1e1;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-  .nav.open {
-    display: flex;
-  }
+    .nav.open {
+        display: flex;
+    }
 
-  .menu-items {
-    flex-direction: column;
-  }
+    .menu-items {
+        flex-direction: column;
+    }
 
-  .menu-items li a {
-    margin-bottom: 10px;
-    list-style: none;
-    text-decoration: none;
-    color: #000000;
-  }
+    .menu-items li a {
+        margin-bottom: 10px;
+        list-style: none;
+        text-decoration: none;
+        color: #000000;
+    }
 
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-  }
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
 
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #000000;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #000000;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
 
-  .bar.open {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
+    .bar.open {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
 
-  .bar.open:nth-child(2) {
-    opacity: 0;
-  }
+    .bar.open:nth-child(2) {
+        opacity: 0;
+    }
 
-  .bar.open:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
+    .bar.open:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
 
-  .container.menu-open {
-    overflow: hidden;
-  }
+    .container.menu-open {
+        overflow: hidden;
+    }
 }
 
 /* Section styles */
 
 
 .section-cover-container {
-  display: flex;
-  padding: 5%;
+    display: flex;
+    padding: 5%;
 }
 
 .section-cover {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .overly-image {
-   position: absolute;
+    position: absolute;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -231,65 +241,67 @@ p {
 }
 
 .section-cover-one {
-  width: fit-content;
-  justify-content: left;
-  padding: 2%;
+    width: fit-content;
+    justify-content: left;
+    padding: 2%;
 }
 
 .section-cover-one h1 {
-  font-family: "Helvetica";
-  font-style: normal;
-  font-size: 65px;
-  color: #5f5f5f;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-size: 65px;
+    color: #5f5f5f;
 }
 
 .section-cover-one p {
-  font-family: "Helvetica";
-  font-size: 25px;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  color: #666666;
+    font-family: "Helvetica";
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #666666;
 }
 
 .learn-button {
-  width: 180px;
-  height: 60px;
-  margin-left: 200px;
-  border-radius: 20cap; /* Make the button rounded */
-  background-color: #ffff;
-  font-weight: bold;
-  color: rgb(3, 3, 3) 3b3;
-  cursor: pointer;
+    width: 180px;
+    height: 60px;
+    margin-left: 200px;
+    border-radius: 20cap;
+    /* Make the button rounded */
+    background-color: #ffff;
+    font-weight: bold;
+    color: rgb(3, 3, 3) 3b3;
+    cursor: pointer;
 }
 
 .section-one-image {
-  margin-top: 10%;
-  width: 100%;
-  height: auto;
-  border-radius: 3cap;
-  justify-content: right;
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+    border-radius: 3cap;
+    justify-content: right;
 }
 
 .learn-more-btn {
-  width: 150px;
-  height: 50px;
-  border-radius: 20cap; /* Make the button rounded */
-  background-color: #ffff;
-  font-weight: bold;
-  color: rgb(3, 3, 3) 3b3;
-  cursor: pointer;
-  margin-left: 100px;
+    width: 150px;
+    height: 50px;
+    border-radius: 20cap;
+    /* Make the button rounded */
+    background-color: #ffff;
+    font-weight: bold;
+    color: rgb(3, 3, 3) 3b3;
+    cursor: pointer;
+    margin-left: 100px;
 }
 
 .section-cover-two {
-  padding: 2%;
-  width: fit-content;
+    padding: 2%;
+    width: fit-content;
 }
 
 .section-two-image {
-  width: 100%;
-  height: fit-content;
-  border-radius: 3cap;
+    width: 100%;
+    height: fit-content;
+    border-radius: 3cap;
 }
 
 /* Add this style to your existing CSS file */
@@ -297,87 +309,89 @@ p {
 
 /* Media query for screens smaller than 1200px */
 @media (max-width: 1600px) {
-  .section-cover-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .section-cover-one p {
-    font-family: "Helvetica";
-    font-size: 15px;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    color: #666666;
-  }
-  .section-cover-one h1 {
-    font-family: "Helvetica";
-    font-style: normal;
-    font-size: 30px;
-    color: #5f5f5f;
-  }
-  .section-cover {
-    width: -webkit-fill-available;
-  }
+    .section-cover-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-cover-one p {
+        font-family: "Helvetica";
+        font-size: 15px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        color: #666666;
+    }
+    .section-cover-one h1 {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-size: 30px;
+        color: #5f5f5f;
+    }
+    .section-cover {
+        width: -webkit-fill-available;
+    }
 
-  .section-cover-one {
-    width: -webkit-fill-available;
-    justify-content: center;
-  }
+    .section-cover-one {
+        width: -webkit-fill-available;
+        justify-content: center;
+    }
 
-  .section-cover-two {
-    display: none;
-  }
+    .section-cover-two {
+        display: none;
+    }
 }
 
-/* .section-search{
-  position: absolute;
-  background-position: center center;
-  margin: 76cap;
-  width: 84%;
-  display: flex;
-  z-index: 1;
+.section-search {
+    position: absolute;
+    background-position: center center;
+    margin: 76cap;
+    width: 84%;
+    display: flex;
+    z-index: 1;
 }
- .search-content {
-  display: flex;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  z-index: 1;
-  padding: 4cap;
-  background-color: #f9f9f9;
-  border-radius: 10cap;
-  gap: 3cap;
+.search-content {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1;
+    padding: 4cap;
+
+
+    background-color: #f9f9f9;
+    border-radius: 10cap;
+    gap: 3cap;
 }
 .search-content p {
-  color: seagreen;
-  font-weight: 600;
-  font-family: "Helvetica";
+    color: seagreen;
+    font-weight: 600;
+    font-family: "Helvetica";
 }
 .icon_one {
-  border-radius: 150cap;
-  padding: 15px;
-  background-color: #e0dede;
-  height: 40px;
-  width: 40px;
+    border-radius: 150cap;
+    padding: 15px;
+    background-color: #e0dede;
+    height: 40px;
+    width: 40px;
 }
 .icon_two {
-  border-radius: 150cap;
-  padding: 15px;
-  background-color: #e0dede;
-  height: 40px;
-  width: 40px;
+    border-radius: 150cap;
+    padding: 15px;
+    background-color: #e0dede;
+    height: 40px;
+    width: 40px;
 }
 .icon_three {
-  border-radius: 150cap;
-  padding: 15px;
-  background-color: #e0dede;
-  height: 40px;
-  width: 40px;
+    border-radius: 150cap;
+    padding: 15px;
+    background-color: #e0dede;
+    height: 40px;
+    width: 40px;
 }
 .option {
-  border: 1px solid white;
-  width: 15cap;
-  outline: none;
+    border: 1px solid white;
+    width: 15cap;
+    outline: none;
 }
 .search-btn {
-  width: 25%;
+    width: 25%;
     height: 100%;
     font-size: 15px;
     font-weight: 600;
@@ -391,250 +405,25 @@ p {
     transition: background-color 0.3s;
 }
 .search-overlay {
-  z-index: 1;
- 
-}  */
+    z-index: 1;
+    margin: -200px;
+}
 /* Cards section*/
 /* ... (Your existing CSS code above) */
 /* Add these styles for responsive cards */
 .cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1px;
-  justify-content: space-evenly;
-  margin: auto;
-  padding: 25px;
-  margin-bottom: 40px;
-  transition: height 0.5s ease; /* Add transition for smooth animation */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 25px;
+    margin-bottom: 40px;
+    transition: height 0.5s ease;
+    /* Add transition for smooth animation */
 }
 
 .cards {
-  box-sizing: border-box;
-  width: 27%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5cap;
-  margin-top: 40px;
-  text-align: justify;
-  font-family: "Helvetica";
-  position: relative; /* Add relative positioning */
-  overflow: hidden; /* /* Add transition for hover effect */
-}
-
-.cards:hover {
-  transform: scale(1.01); /* Increase size on hover */
-}
-
-.cards-img {
-  border-radius: 5cap;
-  padding: 2cap;
-  width: -webkit-fill-available;
-  height: 350px; /* Adjust the height as needed */
-  object-fit: cover; /* Ensure the image covers the entire container */
-}
-
-.cards h3 {
-  display: flex;
-  font-size: 22px;
-  margin-top: 5px;
-  margin-left: 35px;
-  color: rgb(122, 122, 122);
-}
-
-.description {
-  display: flex;
-  margin: 40px;
-  font-size: 18px;
-  color: #666666;
-}
-
-.title {
-  display: flex;
-  margin-left: 35px;
-  font-size: 16px;
-  margin: 40px;
-  color: #666666;
-}
-
-.place-rating {
-  position: absolute;
-  font-size: 18px;
-  margin: 8%;
-  background-color: green;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5cap;
-  z-index: 1; /* Ensure the rating is above the image */
-}
-
-.seemore {
-  border: none;
-  padding: 15px 30px;
-  border-radius: 50px;
-  font-weight: 600;
-  color: #0077ff;
-  background-color: #e0efff;
-  margin: 15px auto;
-  display: block;
-  cursor: pointer;
-}
-
-.seemore:hover,
-.seemore:focus {
-  background-color: #0077ff;
-  color: #e0efff;
-  transform: scale(1.01);
-}
-
-/* Add these styles for the "See More" button */
-.see-more-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 50px;
-  transition: height 1.5s ease;
-}
-
-.see-more-btn {
-  border: none;
-  background-color: #0698f7;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.cards-header {
-  margin: 3%;
-  text-shadow: 0 0 black;
-  display: block;
-  text-align: center;
-}
-
-.cards-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.cards-header h1 {
-  font-family: "Helvetica";
-  font-style: normal;
-  font-size: 55px;
-  color: #5f5f5f;
-}
-
-.cards-header p {
-  font-family: "Helvetica";
-  color: #7e7e7e;
-  font-size: 20px;
-  font-style: oblique;
-  font-weight: 500;
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-
-/* Media query for screens smaller than 1000px */
-@media screen and (max-width: 1600px) {
-  .cards-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 1%;
-    gap: 10cap;
-  }
-
-  .cards {
-    width: 60%;
-  }
-}
-
-/* Media query for screens smaller than 414px */
-@media screen and (max-width: 414px) {
-  .cards-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 1%;
-    gap: 1cap;
-  }
-
-  .cards {
-    width: 100%;
-  }
-}
-
-.service-title {
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
-  margin-top: 5px;
-  color: rgb(122, 122, 122);
-}
-
-.service-container {
-  background-color: #eeeded;
-  border-radius: 2cap;
-  padding: 10px;
-}
-
-/* ... (Your existing CSS code below) */
-.feedback-slider {
-  margin: 30px 0;
-  max-width: 800px;
-  margin: auto;
-}
-
-
-.feedback-item {
-  display: flex;
-  align-items: center;
-  text-align: left;
-  padding: 20px;
-  border-radius: 5px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-}
-
-.feedback-item img {
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-}
-
-.feedback-item div {
-  flex: 1; /* Take remaining space */
-}
-
-.rating {
-  margin-left: 25px;
-  font-size: 18px;
-  width: fit-content;
-  background-color: green;
-  color: #ffffff;
-  padding: 5px 10px;
-  border-radius: 5cap;
-  z-index: 1; /* Ensure the rating is above the image */ /* Adjust the spacing between content and rating */
-}
-
-.feedback-item h2 {
-  display: block;
-  margin-left:25px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.feedback-item h3 {
-  margin-left:25px;
-  color: #333; /* Adjust the color as needed */
-  font-size: 15px; /* Adjust the font size as needed */
-  margin-right:45px;
-  font-weight: bold; /* Make the heading bold */
-}
-.feedback-item p {
-  color: #fff; /* Adjust the color as needed */
-  font-size: 16px; /* Adjust the font size as needed */
-}
-
-
-.feedback-card{
     box-sizing: border-box;
     width: 27%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -642,389 +431,644 @@ p {
     margin-top: 40px;
     text-align: justify;
     font-family: "Helvetica";
-    position: relative; /* Add relative positioning */
-    overflow: hidden; /* /* Add transition for hover effect */
+    position: relative;
+    /* Add relative positioning */
+    overflow: hidden;
+    /* /* Add transition for hover effect */
 }
 
-.explore-container{
-  max-width: 70%;
-  border-radius: 6cap;
-  gap: 1px;
-  background-color: #ddd;
-  margin: auto;
-  margin-top: 60px;
-  padding: 25px;
-  transition: height 0.5s ease;
+.cards:hover {
+    transform: scale(1.01);
+    /* Increase size on hover */
 }
-.explore{
-  display: flex;
-  justify-content: center;
-  width: 70%;
-  margin: auto;
-  padding: 50px;
-  border-radius: 10cap;
+
+.cards-img {
+    border-radius: 5cap;
+    padding: 2cap;
+    width: -webkit-fill-available;
+    height: 350px;
+    /* Adjust the height as needed */
+    object-fit: cover;
+    /* Ensure the image covers the entire container */
+}
+
+.cards h3 {
+    display: flex;
+    font-size: 22px;
+    margin-top: 5px;
+    margin-left: 35px;
+    color: rgb(122, 122, 122);
+}
+
+.description {
+    display: flex;
+    margin: 40px;
+    font-size: 18px;
+    color: #666666;
+}
+
+.title {
+    display: flex;
+    margin-left: 35px;
+    font-size: 16px;
+    margin: 40px;
+    color: #666666;
+}
+
+.place-rating {
+    position: absolute;
+    font-size: 18px;
+    margin: 8%;
+    background-color: green;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5cap;
+    z-index: 1;
+    /* Ensure the rating is above the image */
+}
+
+.seemore {
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #0077ff;
+    background-color: #e0efff;
+    margin: 15px auto;
+    display: block;
+    cursor: pointer;
+}
+
+.seemore:hover,
+.seemore:focus {
+    background-color: #0077ff;
+    color: #e0efff;
+    transform: scale(1.01);
+}
+
+/* Add these styles for the "See More" button */
+.see-more-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px;
+    transition: height 1.5s ease;
+}
+
+.see-more-btn {
+    border: none;
+    background-color: #0698f7;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cards-header {
+    margin: 3%;
+    text-shadow: 0 0 black;
+    display: block;
+    text-align: center;
+}
+
+.cards-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cards-header h1 {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-size: 55px;
+    color: #5f5f5f;
+}
+
+.cards-header p {
+    font-family: "Helvetica";
+    color: #7e7e7e;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+/* Media query for screens smaller than 1000px */
+@media screen and (max-width: 1600px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1%;
+        gap: 10cap;
+    }
+
+    .cards {
+        width: 60%;
+    }
+}
+
+/* Media query for screens smaller than 414px */
+@media screen and (max-width: 414px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1%;
+        gap: 1cap;
+    }
+
+    .cards {
+        width: 100%;
+    }
+}
+
+.service-title {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 5px;
+    color: rgb(122, 122, 122);
+}
+
+.service-container {
+    background-color: #eeeded;
+    border-radius: 2cap;
+    padding: 10px;
+}
+
+/* ... (Your existing CSS code below) */
+.feedback-slider {
+    margin: 30px 0;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.feedback-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.feedback-item img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.feedback-item div {
+    flex: 1;
+    /* Take remaining space */
+}
+
+.rating {
+    margin-left: 25px;
+    font-size: 18px;
+    width: fit-content;
+    background-color: green;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5cap;
+    z-index: 1;
+    /* Ensure the rating is above the image */
+    /* Adjust the spacing between content and rating */
+}
+
+.feedback-item h2 {
+    display: block;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.feedback-item h3 {
+    margin-left: 25px;
+    color: #333;
+    /* Adjust the color as needed */
+    font-size: 15px;
+    /* Adjust the font size as needed */
+    margin-right: 45px;
+    font-weight: bold;
+    /* Make the heading bold */
+}
+.feedback-item p {
+    color: #fff;
+    /* Adjust the color as needed */
+    font-size: 16px;
+    /* Adjust the font size as needed */
+}
+
+
+.feedback-card {
+    box-sizing: border-box;
+    width: 27%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5cap;
+    margin-top: 40px;
+    text-align: justify;
+    font-family: "Helvetica";
+    position: relative;
+    /* Add relative positioning */
+    overflow: hidden;
+    /* /* Add transition for hover effect */
+}
+
+.explore-container {
+    max-width: 70%;
+    border-radius: 6cap;
+    gap: 1px;
+    background-color: #ddd;
+    margin: auto;
+    margin-top: 60px;
+    padding: 25px;
+    transition: height 0.5s ease;
+}
+.explore {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    padding: 50px;
+    border-radius: 10cap;
 }
 .explore input {
-  width: 1000px;
-  height: 100px;
-  font-weight: 600;
-  font-size: 20px;
-  color: #868484;
-  padding: 5%;
-  border-radius: 999em 40px 40px 999em;
-  border: 0px solid aliceblue;
-  outline: none; /* Remove the default focus outline */
+    width: 1000px;
+    height: 100px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #868484;
+    padding: 5%;
+    border-radius: 999em 40px 40px 999em;
+    border: 0px solid aliceblue;
+    outline: none;
+    /* Remove the default focus outline */
 }
 
 .explore #search::placeholder {
-  color: #c0bebe;
-  font-style: normal;
-  font-weight: 600;
- font-size: 20px;
-  padding: 5%;
+    color: #c0bebe;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5%;
 }
 .explore button {
-  background-color: #2596FC;
-  color: #ddd;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  width: 240px;
-  height: 100px;
-  border-radius: 40px 999em 999em 40px;
-  border: 2px solid #2596FC; /* Set border color to match the input field border color */
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.explore button:after {
-  content: "";
-  background: #ffffff; /* Set overlay color */
-  display: block;
-  position: absolute;
-  padding-top: 300%;
-  padding-left: 350%;
-  margin-left: -20px;
-  margin-top: -120%;
-  opacity: 0;
-  transition: all 0.8s;
-}
-
-.explore button:hover {
-  background-color: #1f7fd4; /* Change background color on hover */
-}
-
-.explore button:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s;
-}
-/* Media query for Mobile devices: 320px - 480px */
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .explore-container {
-    max-width: 90%;
-    margin-top: 40px;
-    padding: 15px;
-  }
-
-  .explore {
-    padding: 30px;
-  }
-
-  .explore input {
-    width: 100%;
-    height: 60px;
+    background-color: #2596FC;
+    color: #ddd;
+    font-style: normal;
+    font-weight: 600;
     font-size: 16px;
-    padding: 3%;
-    border-radius: 15px;
-    border-radius: 999em 40px 40px 999em;
-    border: 0px solid aliceblue;
-    outline: none; /* Remove the default focus outline */
-  }
-
-  .explore #search::placeholder {
-    font-size: 16px;
-    padding: 3%;
-  }
-
-  .explore button {
-    width: 100%;
-    height: 60px;
-    font-size: 14px;
-    border-radius: 15px;
+    width: 240px;
+    height: 100px;
     border-radius: 40px 999em 999em 40px;
-    border: 2px solid #2596FC; /* Set border color to match the input field border color */
+    border: 2px solid #2596FC;
+    /* Set border color to match the input field border color */
     position: relative;
     overflow: hidden;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
+}
+
+.explore button:after {
+    content: "";
+    background: #ffffff;
+    /* Set overlay color */
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.explore button:hover {
+    background-color: #1f7fd4;
+    /* Change background color on hover */
+}
+
+.explore button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+/* Media query for Mobile devices: 320px - 480px */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .explore-container {
+        max-width: 90%;
+        margin-top: 40px;
+        padding: 15px;
+    }
+
+    .explore {
+        padding: 30px;
+    }
+
+    .explore input {
+        width: 100%;
+        height: 60px;
+        font-size: 16px;
+        padding: 3%;
+        border-radius: 15px;
+        border-radius: 999em 40px 40px 999em;
+        border: 0px solid aliceblue;
+        outline: none;
+        /* Remove the default focus outline */
+    }
+
+    .explore #search::placeholder {
+        font-size: 16px;
+        padding: 3%;
+    }
+
+    .explore button {
+        width: 100%;
+        height: 60px;
+        font-size: 14px;
+        border-radius: 15px;
+        border-radius: 40px 999em 999em 40px;
+        border: 2px solid #2596FC;
+        /* Set border color to match the input field border color */
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
 }
 
 /* Media query for Laptop or small-size screen: 769px - 1024px */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
- .explore-container {
-    margin-bottom: 100px;
-    max-width: 70%;
-    margin-top: 80px;
-    padding: 35px;
-  }
+    .explore-container {
+        margin-bottom: 100px;
+        max-width: 70%;
+        margin-top: 80px;
+        padding: 35px;
+    }
 
-  .explore {
-    padding: 45px;
-  }
+    .explore {
+        padding: 45px;
+    }
 
-  .explore input {
-    width: 100%;
-    height: 90px;
-    font-size: 20px;
-    padding: 4%;
-    border-radius: 25px;
-    border-radius: 999em 40px 40px 999em;
-    border: 0px solid aliceblue;
-    outline: none; /* Remove the default focus outline */
-  }
+    .explore input {
+        width: 100%;
+        height: 90px;
+        font-size: 20px;
+        padding: 4%;
+        border-radius: 25px;
+        border-radius: 999em 40px 40px 999em;
+        border: 0px solid aliceblue;
+        outline: none;
+        /* Remove the default focus outline */
+    }
 
-  .explore #search::placeholder {
-    font-size: 20px;
-    padding: 4%;
-  }
+    .explore #search::placeholder {
+        font-size: 20px;
+        padding: 4%;
+    }
 
-  .explore button {
-    width: 260px;
-    height: 90px;
-    font-size: 20px;
-    border-radius: 25px;
-    border-radius: 40px 999em 999em 40px;
-    border: 2px solid #2596FC; /* Set border color to match the input field border color */
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
+    .explore button {
+        width: 260px;
+        height: 90px;
+        font-size: 20px;
+        border-radius: 25px;
+        border-radius: 40px 999em 999em 40px;
+        border: 2px solid #2596FC;
+        /* Set border color to match the input field border color */
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
 }
 
 /* Media query for Desktop or large-size screen: 1025px - 1200px */
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
 
-  .explore-container {
-    max-width: 90%;
-    margin-top: 70px;
-    padding: 30px;
-  }
+    .explore-container {
+        max-width: 90%;
+        margin-top: 70px;
+        padding: 30px;
+    }
 
-  .explore {
-    padding: 60px;
-  }
+    .explore {
+        padding: 60px;
+    }
 
-  .explore input {
-    width: 100%;
-    height: 110px;
-    font-size: 24px;
-    padding: 4%;
-    border-radius: 35px;
-    border-radius: 999em 40px 40px 999em;
-    border: 0px solid aliceblue;
-    outline: none; /* Remove the default focus outline */
-  }
+    .explore input {
+        width: 100%;
+        height: 110px;
+        font-size: 24px;
+        padding: 4%;
+        border-radius: 35px;
+        border-radius: 999em 40px 40px 999em;
+        border: 0px solid aliceblue;
+        outline: none;
+        /* Remove the default focus outline */
+    }
 
-  .explore #search::placeholder {
-    font-size: 24px;
-    padding: 4%;
-  }
+    .explore #search::placeholder {
+        font-size: 24px;
+        padding: 4%;
+    }
 
-  .explore button {
-    width: 280px;
-    height: 110px;
-    font-size: 24px;
-    border-radius: 35px;
-    border-radius: 40px 999em 999em 40px;
-    border: 2px solid #2596FC; /* Set border color to match the input field border color */
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
+    .explore button {
+        width: 280px;
+        height: 110px;
+        font-size: 24px;
+        border-radius: 35px;
+        border-radius: 40px 999em 999em 40px;
+        border: 2px solid #2596FC;
+        /* Set border color to match the input field border color */
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
 }
 
 /* For Extra-large size devices: 1201px and more */
 @media screen and (min-width: 1201px) {
-  /* Add your styles for Extra-large size devices if needed */
+    /* Add your styles for Extra-large size devices if needed */
 
-  .explore-container {
-    margin-bottom: 100px;
-    max-width: 70%;
-    margin-top: 80px;
-    padding: 35px;
-  }
+    .explore-container {
+        margin-bottom: 100px;
+        max-width: 70%;
+        margin-top: 80px;
+        padding: 35px;
+    }
 
-  .explore {
-    padding: 70px;
-  }
+    .explore {
+        padding: 70px;
+    }
 
-  .explore input {
-    width: 100%;
-    height: 120px;
-    font-size: 28px;
-    padding: 4%;
-    border-radius: 40px;
-    border-radius: 999em 40px 40px 999em;
-    border: 0px solid aliceblue;
-    outline: none; /* Remove the default focus outline */
-  }
+    .explore input {
+        width: 100%;
+        height: 120px;
+        font-size: 28px;
+        padding: 4%;
+        border-radius: 40px;
+        border-radius: 999em 40px 40px 999em;
+        border: 0px solid aliceblue;
+        outline: none;
+        /* Remove the default focus outline */
+    }
 
-  .explore #search::placeholder {
-    font-size: 28px;
-    padding: 4%;
-  }
+    .explore #search::placeholder {
+        font-size: 28px;
+        padding: 4%;
+    }
 
-  .explore button {
-    width: 300px;
-    height: 120px;
-    font-size: 28px;
-    border-radius: 40px;
-    border-radius: 40px 999em 999em 40px;
-    border: 2px solid #2596FC; /* Set border color to match the input field border color */
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
+    .explore button {
+        width: 300px;
+        height: 120px;
+        font-size: 28px;
+        border-radius: 40px;
+        border-radius: 40px 999em 999em 40px;
+        border: 2px solid #2596FC;
+        /* Set border color to match the input field border color */
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
 }
 .footer {
-  gap: 10%;
-  display: flex;
-  justify-content: space-around;
-  background-color: #f8f8f8;
-  padding: 20px;
+    gap: 10%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f8f8;
+    padding: 20px;
 }
 
 .footer-column {
-  flex: 1;
-  text-align: center;
+    flex: 1;
+    text-align: center;
 }
 
 .footer-logo img {
-  width: 370px; /* Adjust the width as needed */
-  height: 170px; /* Adjust the height as needed */
- 
+    width: 370px;
+    /* Adjust the width as needed */
+    height: 170px;
+    /* Adjust the height as needed */
+
 }
 
 .footer-title {
-  color: #4a4b4c;
-  text-align: left;
-  margin-top: 70px;
-  font-size: 30px;
-  margin-bottom: 10px;
+    color: #4a4b4c;
+    text-align: left;
+    margin-top: 70px;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .footer-description,
 .footer-resources {
-  display: flex;
-  flex-direction: column;
-  margin-top:30px ;
-  gap: 20px;
-  font-size: 14px;
-  text-align: left;
-  padding: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 20px;
+    font-size: 14px;
+    text-align: left;
+    padding: 0px;
 }
 
 .footer-resources li {
-  list-style: none;
-  margin-bottom: 10px;
-  
+    list-style: none;
+    margin-bottom: 10px;
+
 }
 
 .footer-resources a {
-  font-family: "Helvetica";
-  text-decoration: none;
-  font-size: 20px;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  color: #666666;
+    font-family: "Helvetica";
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #666666;
 
 }
 
 .footer-resources a:hover {
-  text-decoration: underline;
-  text-decoration: none;
+    text-decoration: underline;
+    text-decoration: none;
 }
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
-  .footer {
-    flex-direction: row;
-  }
+    .footer {
+        flex-direction: row;
+    }
 }
 
 /* For Tablet View */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .footer {
-    flex-direction: column;
-  }
+    .footer {
+        flex-direction: column;
+    }
 
-  .footer-column {
-    margin-bottom: 20px;
-  }
+    .footer-column {
+        margin-bottom: 20px;
+    }
 }
 
 /* For Mobile View */
 @media screen and (max-width: 767px) {
-  .footer {
-    flex-direction: column;
-  }
+    .footer {
+        flex-direction: column;
+    }
 
-  .footer-column {
-    margin-bottom: 20px;
-  }
+    .footer-column {
+        margin-bottom: 20px;
+    }
 
-  .footer-logo img {
-    width: 60px;
-    height: 60px;
-  }
+    .footer-logo img {
+        width: 60px;
+        height: 60px;
+    }
 
-  .footer-title {
-    font-size: 16px;
-  }
+    .footer-title {
+        font-size: 16px;
+    }
 
-  .footer-description,
-  .footer-resources {
-    font-size: 12px;
-  }
+    .footer-description,
+    .footer-resources {
+        font-size: 12px;
+    }
 }
 
-.copyright{
-  font-size: 20px;
-  font-style: normal;
-  font-weight: bolder;
-  color: #abacae;
-  flex: 1;
-  text-align: center;
+.copyright {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bolder;
+    color: #abacae;
+    flex: 1;
+    text-align: center;
 }
 
 /* Media query for Extra-large size devices: 1201px and more */
 @media screen and (min-width: 1201px) {
-  /* Adjust styles for Extra-large size devices if needed */
+    /* Adjust styles for Extra-large size devices if needed */
 }
 
 /* Responsive columns */
 @media screen and (max-width: 600px) {
-  .cards {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
+    .cards {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
 }
 /* Media query for screens smaller than 600px */
 @media (max-width: 600px) {
-  .container {
-    padding: 10px;
-  }
+    .container {
+        padding: 10px;
+    }
 
-  .section {
-    margin-bottom: 10px;
-  }
+    .section {
+        margin-bottom: 10px;
+    }
 }
-
