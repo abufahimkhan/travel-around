@@ -7,6 +7,7 @@ import services from "./service.json";
 import logo from "./assets/logo.png";
 import ocen from "./assets/cover2.jpg";
 import dessert from "./assets/dessertcar.jpg";
+import plane from './assets/plane.png'
 import Select from "react-select";
 import Placecards from "./Placecards";
 import Servicecards from "./Servicecards";
@@ -83,6 +84,7 @@ function App() {
       <hr />
 
       <section className="section-cover">
+      <img src={plane} className="overly-image"/>
         <section className="section-cover-container">
           <section className="section-cover-one">
             <h1>Plan easy, Pay less</h1>
@@ -95,13 +97,14 @@ function App() {
               comfort and convenience.
             </p>
             <img className="section-two-image" src={ocen} alt="ocean" />
+           
           </section>
+         
           <section className="section-cover-two">
             <img className="section-one-image" src={dessert} alt="dessert" />
           </section>
         </section>
-      </section>
-      {/* <section className="section-search">
+        {/* <section className="section-search">
             <div className="search-overlay"></div>
             <div className="search-content">
             
@@ -120,6 +123,8 @@ function App() {
               <button className="search-btn">Search</button>
             </div>
           </section>  */}
+      </section>
+     
       <hr />
       <div className="cards-header">
         <h1>Popular destinations</h1>
@@ -166,41 +171,41 @@ function App() {
         <footer className="footer">
       <div className="footer-column">
         <div className="footer-logo">
-        <img className="logo" src={logo} alt="Logo" />
+        <img className="footer-logo img" src={logo} alt="Logo" />
         </div>
-        <p className="footer-description">Your logo description goes here.</p>
+        {/* <p className="footer-description">Your logo description goes here.</p> */}
       </div>
 
       <div className="footer-column">
-        <h3 className="footer-title">Resources 1</h3>
+        <h3 className="footer-title">Contact</h3>
         <ul className="footer-resources">
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
+          <li><a href="#">01704606893</a></li>
+          <li><a href="#">Email:abufahimkhan1@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/abu-fahim-shanto-11b2a2216/">Linkedin:abu-fahim-shanto</a></li>
         </ul>
       </div>
 
       <div className="footer-column">
-        <h3 className="footer-title">Resources 2</h3>
+        <h3 className="footer-title">Company</h3>
         <ul className="footer-resources">
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Careers</a></li>
         </ul>
       </div>
 
       <div className="footer-column">
-        <h3 className="footer-title">Resources 3</h3>
+        <h3 className="footer-title">Resources</h3>
         <ul className="footer-resources">
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Travels</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Reviews</a></li>
         </ul>
       </div>
      
           
         </footer>
-        <p>&copy; 2023 Your Company</p>
+        <p  className="copyright">&copy; 2023 Your Company</p>
       </div>
 
     

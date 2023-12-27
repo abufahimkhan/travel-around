@@ -203,6 +203,8 @@ p {
 }
 
 /* Section styles */
+
+
 .section-cover-container {
   display: flex;
   padding: 5%;
@@ -216,6 +218,16 @@ p {
   border-radius: 5px;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.overly-image {
+   position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    margin: 30cap;
+    width: 70%;
+    display: flex;
+    z-index: 1;
 }
 
 .section-cover-one {
@@ -281,15 +293,7 @@ p {
 }
 
 /* Add this style to your existing CSS file */
-.overlay-image {
-  position: absolute;
-  width: 1700px;
-  height: 500px;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
+
 
 /* Media query for screens smaller than 1200px */
 @media (max-width: 1600px) {
@@ -324,6 +328,72 @@ p {
   }
 }
 
+/* .section-search{
+  position: absolute;
+  background-position: center center;
+  margin: 76cap;
+  width: 84%;
+  display: flex;
+  z-index: 1;
+}
+ .search-content {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 1;
+  padding: 4cap;
+  background-color: #f9f9f9;
+  border-radius: 10cap;
+  gap: 3cap;
+}
+.search-content p {
+  color: seagreen;
+  font-weight: 600;
+  font-family: "Helvetica";
+}
+.icon_one {
+  border-radius: 150cap;
+  padding: 15px;
+  background-color: #e0dede;
+  height: 40px;
+  width: 40px;
+}
+.icon_two {
+  border-radius: 150cap;
+  padding: 15px;
+  background-color: #e0dede;
+  height: 40px;
+  width: 40px;
+}
+.icon_three {
+  border-radius: 150cap;
+  padding: 15px;
+  background-color: #e0dede;
+  height: 40px;
+  width: 40px;
+}
+.option {
+  border: 1px solid white;
+  width: 15cap;
+  outline: none;
+}
+.search-btn {
+  width: 25%;
+    height: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 40px 999em 999em 40px;
+    border: 0px;
+    background-color: #0698f7;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.search-overlay {
+  z-index: 1;
+ 
+}  */
 /* Cards section*/
 /* ... (Your existing CSS code above) */
 /* Add these styles for responsive cards */
@@ -512,11 +582,6 @@ p {
   margin: auto;
 }
 
-.feedback-slider {
-  margin: 20px 0;
-  max-width: 800px;
-  margin: auto;
-}
 
 .feedback-item {
   display: flex;
@@ -568,15 +633,7 @@ p {
   font-size: 16px; /* Adjust the font size as needed */
 }
 
-/* Footer styles */
-.footer {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 36px;
-  background-color: #f8f8f8;
-  color: #fff;
-}
+
 .feedback-card{
     box-sizing: border-box;
     width: 27%;
@@ -709,10 +766,11 @@ p {
 
 /* Media query for Laptop or small-size screen: 769px - 1024px */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .explore-container {
-    max-width: 85%;
-    margin-top: 55px;
-    padding: 22px;
+ .explore-container {
+    margin-bottom: 100px;
+    max-width: 70%;
+    margin-top: 80px;
+    padding: 35px;
   }
 
   .explore {
@@ -797,6 +855,7 @@ p {
   /* Add your styles for Extra-large size devices if needed */
 
   .explore-container {
+    margin-bottom: 100px;
     max-width: 70%;
     margin-top: 80px;
     padding: 35px;
@@ -836,6 +895,7 @@ p {
   }
 }
 .footer {
+  gap: 10%;
   display: flex;
   justify-content: space-around;
   background-color: #f8f8f8;
@@ -848,34 +908,49 @@ p {
 }
 
 .footer-logo img {
-  width: 80px; /* Adjust the width as needed */
-  height: 80px; /* Adjust the height as needed */
-  border-radius: 50%;
-  margin-bottom: 10px;
+  width: 370px; /* Adjust the width as needed */
+  height: 170px; /* Adjust the height as needed */
+ 
 }
 
 .footer-title {
-  font-size: 18px;
+  color: #4a4b4c;
+  text-align: left;
+  margin-top: 70px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
 .footer-description,
 .footer-resources {
+  display: flex;
+  flex-direction: column;
+  margin-top:30px ;
+  gap: 20px;
   font-size: 14px;
+  text-align: left;
+  padding: 0px;
 }
 
 .footer-resources li {
   list-style: none;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  
 }
 
 .footer-resources a {
+  font-family: "Helvetica";
   text-decoration: none;
-  color: #2596FC;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: #666666;
+
 }
 
 .footer-resources a:hover {
   text-decoration: underline;
+  text-decoration: none;
 }
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
@@ -920,6 +995,14 @@ p {
   }
 }
 
+.copyright{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bolder;
+  color: #abacae;
+  flex: 1;
+  text-align: center;
+}
 
 /* Media query for Extra-large size devices: 1201px and more */
 @media screen and (min-width: 1201px) {
@@ -945,58 +1028,3 @@ p {
   }
 }
 
-/* 
- .search-content {
-  display: flex;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  z-index: 1;
-  padding: 4cap;
-  margin-left: 30cap;
-  margin-right: 30cap;
-  background-color: #f9f9f9;
-  border-radius: 10cap;
-  gap: 3cap;
-}
-.search-content p {
-  color: seagreen;
-  font-weight: 600;
-  font-family: "Helvetica";
-}
-.icon_one {
-  border-radius: 150cap;
-  padding: 15px;
-  background-color: #e0dede;
-  height: 40px;
-  width: 40px;
-}
-.icon_two {
-  border-radius: 150cap;
-  padding: 15px;
-  background-color: #e0dede;
-  height: 40px;
-  width: 40px;
-}
-.icon_three {
-  border-radius: 150cap;
-  padding: 15px;
-  background-color: #e0dede;
-  height: 40px;
-  width: 40px;
-}
-.option {
-  border: 1px solid white;
-  width: 15cap;
-}
-.search-btn {
-  border-radius: 4cap;
-  width: 140px;
-  background-color: #2596fc;
-  margin-left: 50px;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: medium;
-}
-.search-overlay {
-  z-index: 1;
-  margin: -200px;
-} */
