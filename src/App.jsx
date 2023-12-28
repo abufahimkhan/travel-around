@@ -131,7 +131,6 @@ function App() {
         <p>Unleash your Wanderlust with travel around</p>
       </div>
       <Placecards />
-      <hr />
       <div className="service-container">
         <div className="cards-header">
           <h1>Our Services</h1>
@@ -162,7 +161,7 @@ function App() {
                 placeholder="Enter Your Email Here"
                 id="search"
               />
-              <button type="button" className="explore-now">
+              <button type="button">
                 Explore Now
               </button>
           </div>

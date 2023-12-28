@@ -12,7 +12,7 @@ function Servicecards() {
             <div className="cards" key={getservics.id}>
               <img className="cards-img" src={getservics.image} alt={getservics.id} />
               <h2 className="service-title">{getservics.title}</h2>
-              <p className="description">{getservics.description}</p>
+              <p className="service-description">{getservics.description}</p>
               <button className="seemore">See More</button>
             </div>
           ))}
