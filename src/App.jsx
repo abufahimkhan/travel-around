@@ -162,7 +162,7 @@ function App() {
                 id="search"
               />
               <button type="button">
-                Explore Now
+                Explore
               </button>
           </div>
         </div>

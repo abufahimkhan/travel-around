@@ -323,7 +323,7 @@ p {
   box-sizing: border-box;
   width: 25%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5cap;
+  border-radius: 2cap;
   margin-top: 40px;
   text-align: justify;
   font-family: "Helvetica";
@@ -346,7 +346,7 @@ p {
 }
 
 .cards-img {
-  border-radius: 5cap;
+  border-radius: 3cap;
   padding: 2cap;
   width: -webkit-fill-available;
   height: 300px;
@@ -453,6 +453,7 @@ p {
   text-shadow: 0 0 black;
   display: block;
   text-align: center;
+  margin-top: 35px;
 }
 
 .cards-content {
@@ -674,11 +675,14 @@ p {
 /* Media Query for responsiveness */
 @media screen and (max-width: 768px) {
   .explore input {
-    width: 80%;
+    width: 100%;
+    height: 50px;
   }
 
   .explore button {
-    width: 30%;
+    width: 40%;
+    height: 50px;
+    font-size: 16px;
   }
 }
 
@@ -862,6 +866,9 @@ p {
   .cards-img {
     height: 200px;
   }
+  .overly-image{
+    display: none;
+  }
 
   .title {
     margin: 20px 0;
@@ -885,7 +892,17 @@ p {
     margin-bottom: 20px;
   }
 }
-
+@media(max-width:1300px){
+  .explore-container {
+    max-width: 85%;
+    border-radius: 6px;
+    gap: 1px;
+    margin: auto;
+    margin-top: 60px;
+    padding: 25px;
+    transition: height 0.5s ease;
+}
+}
 /* Media query for screens smaller than 600px */
 @media (max-width: 600px) {
   .container {
