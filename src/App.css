@@ -85,23 +85,21 @@ p {
 }
 
 .search-input {
-  font-size: 14px;
   width: 200px;
   max-width: 0;
   padding: 5px;
   transition: all 0.5s ease;
+  outline: none;
+  border: 0px solid #666666;
+  border-radius: 2cap;
   opacity: 0;
-  outline: #666666;
-  border: 1px solid #666666;
-  /* Add border to make the input visible */
-  border-radius: 10px;
-  /* Add border-radius for a more rounded look */
+  font-size: 15px;
 }
 
 .search-expanded {
   max-width: 200px;
   opacity: 1;
-  /* Change opacity to 1 to make the input visible */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .start-button {
@@ -255,7 +253,6 @@ p {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   z-index: 1;
   padding: 4cap;
-
   background-color: #f9f9f9;
   border-radius: 10cap;
   gap: 3cap;
@@ -310,35 +307,39 @@ p {
   margin: -200px;
 }
 /* Cards section*/
-/* ... (Your existing CSS code above) */
-.cards-container {
+/* ... (Your existing CSS code above) */.cards-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1px;
   justify-content: space-evenly;
   margin: auto;
-
-  transition: height 0.5s ease;
-  /* Add transition for smooth animation */
+  padding: 45px;
+  opacity: 1;
+  transition: opacity 1s, max-height 1s;
 }
 
 .cards {
   box-sizing: border-box;
   width: 25%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 3cap;
+  border-radius: 5cap;
   margin-top: 40px;
   text-align: justify;
   font-family: "Helvetica";
   position: relative;
-  /* Add relative positioning */
   overflow: hidden;
-  /* /* Add transition for hover effect */
+  transition: opacity 1s, max-height 1s;
+}
+
+.cards.hidden-card {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 1s, max-height 1s;
 }
 
 .cards:hover {
   transform: scale(1.01);
-  /* Increase size on hover */
 }
 
 .cards-img {
@@ -346,9 +347,7 @@ p {
   padding: 2cap;
   width: -webkit-fill-available;
   height: 300px;
-  /* Adjust the height as needed */
   object-fit: cover;
-  /* Ensure the image covers the entire container */
 }
 
 .cards h3 {
@@ -385,7 +384,6 @@ p {
   padding: 5px 10px;
   border-radius: 5cap;
   z-index: 1;
-  /* Ensure the rating is above the image */
 }
 
 .seemore {
@@ -407,7 +405,6 @@ p {
   transform: scale(1.01);
 }
 
-/* Add these styles for the "See More" button */
 .see-more-container {
   display: flex;
   flex-wrap: wrap;
@@ -423,6 +420,29 @@ p {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.see-more-btn:hover {
+  background-color: #0077ff;
+  transform: scale(1.05);
+}
+
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.see-more-btn:active {
+  animation: clickAnimation 0.3s;
+  /* Apply the click animation on button press */
 }
 
 .cards-header {
@@ -554,33 +574,46 @@ p {
   /* /* Add transition for hover effect */
 }
 
+
+@media (max-width:700px) {
+  .feedback-slider {
+    max-width: 100%;
+    margin: auto;
+}
+}
 .explore-container {
   max-width: 50%;
-  border-radius: 6cap;
+  border-radius: 6px;
   gap: 1px;
   margin: auto;
   margin-top: 60px;
   padding: 25px;
   transition: height 0.5s ease;
 }
+
 .explore {
+  display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   margin: auto;
-  border-radius: 10cap;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
+
 .explore input {
-  width: 80%;
-  height: 10%;
+  width: 70%;
+  height: 100px;
   font-weight: 600;
   font-size: 20px;
   color: #868484;
-  padding: 4%;
+  padding: 15px;
   margin: 11px;
   border-radius: 999em 40px 40px 999em;
   border: 0px solid aliceblue;
   outline: none;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .explore #search::placeholder {
@@ -588,22 +621,25 @@ p {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  padding: 5%;
+  padding: 15px;
 }
+
 .explore button {
   background-color: #2596fc;
   color: #ddd;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  width: 10%;
+  width: 20%;
   height: 100px;
   border-radius: 40px 999em 999em 40px;
   border: 2px solid #2596fc;
-  position: absolute;
-  overflow: hidden;
   cursor: pointer;
   transition: background-color 0.3s;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .explore button:after {
@@ -630,6 +666,17 @@ p {
   margin: 0;
   opacity: 1;
   transition: 0s;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+  .explore input {
+    width: 80%;
+  }
+
+  .explore button {
+    width: 30%;
+  }
 }
 
 .footer {
