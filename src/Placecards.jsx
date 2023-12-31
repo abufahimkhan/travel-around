@@ -14,14 +14,27 @@ function Placecards() {
       <div className="cards-container">
         {records.map((getData, index) => (
           <div
-            className={`cards ${index >= 3 && !showAllCards ? "hidden-card" : ""}`}
+            className={`cards ${
+              index >= 3 && !showAllCards ? "hidden-card" : ""
+            }`}
             key={getData.id}
           >
             <p className="place-rating">⭐{getData.rating}</p>
-            <img className="cards-img" src={getData.image} alt={getData.country} />
-            <h3 className="title">{getData.country}</h3>
-            <p className="description">🔰 {getData.city}</p>
-            <button className="seemore">See more</button>
+            <img
+              className="cards-img"
+              src={getData.image}
+              alt={getData.country}
+            />
+            <div className="positions-horizontal">
+              <div className="positions-vertical">
+              <h3 className="title">
+              🌎{getData.country}
+              
+              </h3>
+              <p className="city">🔰 {getData.city}</p>
+              </div>
+              <button className="seemore">See more</button>
+            </div>
           </div>
         ))}
       </div>

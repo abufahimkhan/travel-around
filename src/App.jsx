@@ -131,6 +131,8 @@ function App() {
         <p>Unleash your Wanderlust with travel around</p>
       </div>
       <Placecards />
+
+      
       <div className="service-container">
         <div className="cards-header">
           <h1>Our Services</h1>

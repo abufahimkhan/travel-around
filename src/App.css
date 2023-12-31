@@ -7,19 +7,19 @@ body,
 h1,
 h2,
 p {
-  font-family: "Helvetica";
+  font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
   justify-content: center;
   align-items: center;
   margin: 0;
   padding: 0;
-  color: #000000;
+  color: #929090;
   /* Adjust font size as needed */
 }
 
 /* Container styles */
 .container {
   max-width: 100%;
-  background-color: #f9f9f9;
+  background-color: #FFFFFF;
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
@@ -34,7 +34,7 @@ p {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #f8f8f8;
+
   color: #000000;
   z-index: 1000;
 }
@@ -183,15 +183,15 @@ p {
 }
 
 .section-cover-one h1 {
-  font-family: "Helvetica";
-  font-style: normal;
+  font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
+    font-style: normal;
   font-size: 45px;
   color: #5f5f5f;
 }
 
 .section-cover-one p {
-  font-family: "Helvetica";
-  font-size: 15px;
+  font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
+    font-size: 15px;
   margin-top: 30px;
   margin-bottom: 40px;
   color: #666666;
@@ -318,18 +318,32 @@ p {
   opacity: 1;
   transition: opacity 1s, max-height 1s;
 }
-
+.positions-horizontal {
+    margin-bottom: 20px;
+    padding: 10px;display: inline-flex;
+}
+.positions-vertical {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
 .cards {
   box-sizing: border-box;
-  width: 25%;
+  width: 27%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 2cap;
+  border: 2px solid #dad4d4;
+  border-radius: 4cap;
   margin-top: 40px;
   text-align: justify;
   font-family: "Helvetica";
   position: relative;
   overflow: hidden;
+  display: flex; /* Make the card a flex container */
+  flex-direction: column; /* Stack the child elements vertically */
   transition: opacity 1s, max-height 1s;
+}
+.cards-content {
+  flex-grow: 1; /* Allow the content to take up remaining space */
 }
 
 .cards.hidden-card {
@@ -346,8 +360,8 @@ p {
 }
 
 .cards-img {
-  border-radius: 3cap;
-  padding: 2cap;
+  border-radius: 4cap;
+  padding: 1cap;
   width: -webkit-fill-available;
   height: 300px;
   object-fit: cover;
@@ -355,11 +369,13 @@ p {
 
 .cards h3 {
   display: flex;
-  font-size: 15px;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  margin-left: 25px;
+  width: 100%;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 5px;
   color: rgb(122, 122, 122);
+
 }
 
 .description {
@@ -376,31 +392,40 @@ p {
   font-size: 16px;
   margin: 40px;
   color: #666666;
+  flex-direction: column;
 }
 
 .place-rating {
   position: absolute;
-  font-size: 12px;
-  margin: 12%;
-  background-color: green;
+  font-size: 15px;
+  margin: 7%;
+  background-color: rgb(51 142 51);
+  opacity: 0.9;
   color: #fff;
   padding: 5px 10px;
   border-radius: 5cap;
   z-index: 1;
 }
-
-.seemore {
-  border: none;
-  padding: 10px 15px;
-  border-radius: 50px;
-  font-weight: 600;
-  color: #ffffff;
-  background-color: #097af1;
-  margin: 10px auto;
-  display: block;
-  cursor: pointer;
+.city{
+  display: flex;
+    width: fit-content;
+    margin-left: 9px;
+    font-size: 15px;
 }
 
+.seemore {
+  border: 1px solid #858585;
+  padding: 15px 20px;
+  border-radius: 5cap;
+  font-weight: 600;
+  font-size: 10px;
+  color: #464141;
+  background-color: #ffff;
+  margin-left: 80px;
+  margin-top: 25px;
+  cursor: pointer;
+  align-self: flex-end;
+}
 .seemore:hover,
 .seemore:focus {
   background-color: #0077ff;
@@ -470,8 +495,8 @@ p {
 }
 
 .cards-header p {
-  font-family: "Helvetica";
-  color: #7e7e7e;
+  font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
+    color: #7e7e7e;
   font-size: 15px;
   font-style: oblique;
   font-weight: 500;
@@ -481,16 +506,19 @@ p {
 
 .service-title {
   display: flex;
-  justify-content: center;
-  font-size: 25px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  color: rgb(122, 122, 122);
+    justify-content: flex-start;
+    font-size: 25px;
+    margin-left: 15px;
+    color: rgb(122, 122, 122);
 }
 .service-description {
-  padding: 25px;
-  font-size: 12px;
-  color: #666666;
+  font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
+    color: #7e7e7e;
+    padding: 20px;
+    text-align: left;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
 }
 
 .service-container {
@@ -498,7 +526,19 @@ p {
   border-radius: 2cap;
   padding: 10px;
 }
-
+.service-more{
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5cap;
+  font-weight: 600;
+  font-size: 10px;
+  color: #000000;
+  background-color: #cdd2d6;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  align-self: flex-start;
+}
 /* ... (Your existing CSS code below) */
 .feedback-slider {
   margin: 30px 0;
@@ -571,8 +611,8 @@ p {
   border-radius: 5cap;
   margin-top: 40px;
   text-align: justify;
-  font-family: "Helvetica";
-  position: relative;
+  font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
+    position: relative;
   /* Add relative positioning */
   overflow: hidden;
   /* /* Add transition for hover effect */
@@ -729,8 +769,8 @@ p {
 }
 
 .footer-resources a {
-  font-family: "Helvetica";
-  text-decoration: none;
+  font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
+    text-decoration: none;
   font-size: 15px;
   margin-top: 30px;
   margin-bottom: 40px;
@@ -823,15 +863,15 @@ p {
     align-items: center;
   }
   .section-cover-one p {
-    font-family: "Helvetica";
-    font-size: 15px;
+    font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
+        font-size: 15px;
     margin-top: 30px;
     margin-bottom: 40px;
     color: #666666;
   }
   .section-cover-one h1 {
-    font-family: "Helvetica";
-    font-style: normal;
+    font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
+        font-style: normal;
     font-size: 30px;
     color: #5f5f5f;
   }
