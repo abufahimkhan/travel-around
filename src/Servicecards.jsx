@@ -7,9 +7,9 @@ function Servicecards() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-        <div className="cards-container">
+        <div className="service-container">
           {services.map((getservics) => (
-            <div className="cards" key={getservics.id}>
+            <div className="service-cards" key={getservics.id}>
               <img className="cards-img" src={getservics.image} alt={getservics.id} />
               <h2 className="service-title">{getservics.title}</h2>
               <p className="service-description">{getservics.description}</p>

@@ -125,7 +125,6 @@ function App() {
           </section>  */}
       </section>
      
-      <hr />
       <div className="cards-header">
         <h1>Popular destinations</h1>
         <p>Unleash your Wanderlust with travel around</p>
@@ -141,7 +140,6 @@ function App() {
 
         <Servicecards />
       </div>
-      <hr />
       <div className="feedback-slider-container">
         <div className="cards-header">
           <h1>Love From Our Travellers</h1>
@@ -168,7 +166,6 @@ function App() {
               </button>
           </div>
         </div>
-        <hr />
         <footer className="footer">
       <div className="footer-column">
         <div className="footer-logo">
