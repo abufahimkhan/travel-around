@@ -675,7 +675,7 @@ body, h1, h2, p {
    }
 }
 .footer {
-    gap: 9%;
+    gap: 8%;
     display: flex;
     justify-content: space-around;
     padding: 20px;
