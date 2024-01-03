@@ -581,7 +581,7 @@ body, h1, h2, p {
     flex-wrap: wrap;
     gap: 1px;
     justify-content: space-evenly;
-    margin: 5%;
+    margin: 7%;
     border-radius: 5cap;
     background-color: #f3f3f3;
     opacity: 1;
@@ -675,7 +675,7 @@ body, h1, h2, p {
    }
 }
 .footer {
-    gap: 5%;
+    gap: 9%;
     display: flex;
     justify-content: space-around;
     padding: 20px;
@@ -687,11 +687,12 @@ body, h1, h2, p {
 .footer-logo img {
     width: 350px;
     height: 130px;
+    margin-left: 60px;
 }
 .footer-logo-description{
     display: flex;
     font-size: 20px;
-    margin-left: 85px;
+    margin-left: 125px;
     text-align: left;
 }
 .footer-title {
