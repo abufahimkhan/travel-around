@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import "./App.css";
 import records from "./records.json";
 
@@ -37,12 +38,20 @@ function Placecards() {
       </div>
 
       {records.length > 3 && (
-        <div className="see-more-container">
-          <button className="see-more-btn" onClick={toggleCards}>
-            {showAllCards ? "See Less" : "See More"}
-          </button>
-        </div>
+  <div className="see-more-container">
+    <button className="see-more-btn" onClick={toggleCards}>
+      {showAllCards ? (
+        <>
+        <FaChevronUp />
+        </>
+      ) : (
+        <>
+        <FaChevronDown />
+        </>
       )}
+    </button>
+  </div>
+)}
     </div>
   );
 }

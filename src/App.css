@@ -395,15 +395,15 @@ p {
   transition: height 1.5s ease;
 }
 .see-more-btn {
-  border: none;
-  background-color: #0698f7;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
+    border: none;
+    background-color: #ffffff;
+    color: #aaa8a8;
+    font-size: 5cap;
+    border-radius: 5px;
 }
 .see-more-btn:hover {
-  background-color: #0077ff;
-  transform: scale(1.05);
+  background-color: #ffffff;
+  transform: scale(1.9);
 }
 @keyframes clickAnimation {
   0% {
@@ -420,7 +420,6 @@ p {
   animation: clickAnimation 0.3s;
 }
 .cards-header {
-  margin: auto;
   text-shadow: 0 0 black;
   display: block;
   text-align: center;
@@ -461,6 +460,7 @@ p {
   box-sizing: border-box;
   width: 27%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
   border: 2px solid #dad4d4;
   border-radius: 4cap;
   margin-top: 40px;
