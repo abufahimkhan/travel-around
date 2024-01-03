@@ -346,12 +346,12 @@ body, h1, h2, p {
 }
 .place-rating {
     position: absolute;
-    font-size: 15px;
-    margin: 7%;
+    font-size: 20px;
+    margin: 5%;
     background-color: rgb(51 142 51);
     opacity: 0.9;
     color: #fff;
-    padding: 5px 10px;
+    padding: 10px 10px;
     border-radius: 5cap;
     z-index: 1;
 }
