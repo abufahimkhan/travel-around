@@ -492,11 +492,13 @@ body, h1, h2, p {
     transform: translateY(4px);
 }
 .service-title {
+    font-family: "CenturyGothic", "AppleGothic", sans-serif;
     display: flex;
     justify-content: flex-start;
-    font-size: 30px;
+    font-size: 35px;
     margin-left: 15px;
-    color: rgb(95 95 95);}
+    color: rgb(95 95 95);
+}
 .service-description {
     display: flex;
     font-family: "Century Gothic";
