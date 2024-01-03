@@ -1,97 +1,98 @@
 [
-      { "id":1,
-        "country": " France",
-        "city": "Paris",
-        "image": "https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900",
-        "rating": "4.5",
-        "seeMoreButton": "Explore Paris"
-      },
-      {
-        "id":2,
-        "country": " Italy",
-        "city": "Rome",
-        "image": "https://www.state.gov/wp-content/uploads/2019/04/shutterstock_720444505v2-2208x1406-1.jpg",
-        "rating":"4.3",
-        "seeMoreButton": "Discover Rome"
-      },
-      {
-        "id":3,
-        "country": " Japan",
-        "city": "Tokyo",
-        "image": "https://www.state.gov/wp-content/uploads/2019/04/Japan-2107x1406.jpg",
-        "rating": "4.7",
-        "seeMoreButton": "Experience Tokyo"
-      },
-      {
-        "id":4,
-        "country": " USA",
-        "city": "New York",
-        "image": "https://www.scholarshipregion.com/wp-content/uploads/2023/10/statue-liberty-usa.jpg",
-        "rating": "4.6",
-        "seeMoreButton": "Visit New York"
-      },
-      {
-        "id":5,
-        "country": "Australia",
-        "city": " Sydney",
-        "image": "https://media.cnn.com/api/v1/images/stellar/prod/191011110307-02-australia-beautiful-places.jpg?q=w_2187,h_1230,x_0,y_0,c_fill/h_618",
-        "rating": "4.4",
-        "seeMoreButton": "Explore Sydney"
-      },
-      {
-        "id":6,
-        "country": " Spain",
-        "city": "Barcelona",
-        "image": "https://www.state.gov/wp-content/uploads/2023/07/shutterstock_1656628171v2-2107x1406.jpg",
-        "rating": "4.8",
-        "seeMoreButton": "Discover Barcelona"
-      },
-      {
-        "id":7,
-        "country": " Thailand",
-        "city": "Bangkok",
-        "image": "https://www.travelandleisure.com/thmb/1aFt6rEb0a9snnKSaoVVQ7Je2UY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/itinerary_05-5905cbf35f9b5810dca7a477.jpg",
-        "rating": 4.2,
-        "seeMoreButton": "Experience Bangkok"
-      },
-      {
-        "id":8,
-        "country": "Canada",
-        "city": "Vancouver",
-        "image": "https://i.natgeofe.com/k/e2ffc795-8b1f-4479-8c95-b6497e5ca4f2/canada-vancouver.jpg?w=1084.125&h=609",
-        "rating": 4.5,
-        "seeMoreButton": "Visit Vancouver"
-      },
-      {
-        "id":9,
-        "country": " Brazil",
-        "city": "Rio de Janeiro",
-        "image": "https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/brazil-famous-for.jpg",
-        "rating": 4.6,
-        "seeMoreButton": "Explore Rio"
-      },
-      {
-        "id":10,
-        "country": " Greece",
-        "city": "Athens",
-        "image": "https://www.state.gov/wp-content/uploads/2023/07/shutterstock_1168009126v2.jpg",
-        "rating": 4.3,
-        "seeMoreButton": "Discover Athens"
-      },
-      {
-        "id":11,
-        "country": " India",
-        "city": "Mumbai",
-        "image": "https://i.natgeofe.com/k/42e832f5-fd48-43ff-b338-091bdf4048ca/india-tajmahal_16x9.jpg?w=1200",
-        "rating": 4.4,
-        "seeMoreButton": "Experience Mumbai"
-      },
-      {
-        "id":12,
-        "country": " Bangladesh",
-        "city": "Dhaka",
-        "image": "https://i.natgeofe.com/k/42e832f5-fd48-43ff-b338-091bdf4048ca/india-tajmahal_16x9.jpg?w=1200",
-        "rating": 4.1,
-        "seeMoreButton": "Experience Bangladesh"
-      }
+  {
+    "id": 1,
+    "country": " France",
+    "city": "Paris",
+    "image": "https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900",
+    "rating": "4.5",
+    "seeMoreButton": "Explore Paris"
+  },
+  {
+    "id": 2,
+    "country": " Italy",
+    "city": "Rome",
+    "image": "https://www.state.gov/wp-content/uploads/2019/04/shutterstock_720444505v2-2208x1406-1.jpg",
+    "rating": "4.3",
+    "seeMoreButton": "Discover Rome"
+  },
+  {
+    "id": 3,
+    "country": " Japan",
+    "city": "Tokyo",
+    "image": "https://www.state.gov/wp-content/uploads/2019/04/Japan-2107x1406.jpg",
+    "rating": "4.7",
+    "seeMoreButton": "Experience Tokyo"
+  },
+  {
+    "id": 4,
+    "country": " USA",
+    "city": "New York",
+    "image": "https://www.scholarshipregion.com/wp-content/uploads/2023/10/statue-liberty-usa.jpg",
+    "rating": "4.6",
+    "seeMoreButton": "Visit New York"
+  },
+  {
+    "id": 5,
+    "country": "Australia",
+    "city": " Sydney",
+    "image": "https://media.cnn.com/api/v1/images/stellar/prod/191011110307-02-australia-beautiful-places.jpg?q=w_2187,h_1230,x_0,y_0,c_fill/h_618",
+    "rating": "4.4",
+    "seeMoreButton": "Explore Sydney"
+  },
+  {
+    "id": 6,
+    "country": " Spain",
+    "city": "Barcelona",
+    "image": "https://www.state.gov/wp-content/uploads/2023/07/shutterstock_1656628171v2-2107x1406.jpg",
+    "rating": "4.8",
+    "seeMoreButton": "Discover Barcelona"
+  },
+  {
+    "id": 7,
+    "country": " Thailand",
+    "city": "Bangkok",
+    "image": "https://www.travelandleisure.com/thmb/1aFt6rEb0a9snnKSaoVVQ7Je2UY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/itinerary_05-5905cbf35f9b5810dca7a477.jpg",
+    "rating": 4.2,
+    "seeMoreButton": "Experience Bangkok"
+  },
+  {
+    "id": 8,
+    "country": "Canada",
+    "city": "Vancouver",
+    "image": "https://i.natgeofe.com/k/e2ffc795-8b1f-4479-8c95-b6497e5ca4f2/canada-vancouver.jpg?w=1084.125&h=609",
+    "rating": 4.5,
+    "seeMoreButton": "Visit Vancouver"
+  },
+  {
+    "id": 9,
+    "country": " Brazil",
+    "city": "Rio de Janeiro",
+    "image": "https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/brazil-famous-for.jpg",
+    "rating": 4.6,
+    "seeMoreButton": "Explore Rio"
+  },
+  {
+    "id": 10,
+    "country": " Greece",
+    "city": "Athens",
+    "image": "https://www.state.gov/wp-content/uploads/2023/07/shutterstock_1168009126v2.jpg",
+    "rating": 4.3,
+    "seeMoreButton": "Discover Athens"
+  },
+  {
+    "id": 11,
+    "country": " India",
+    "city": "Mumbai",
+    "image": "https://i.natgeofe.com/k/42e832f5-fd48-43ff-b338-091bdf4048ca/india-tajmahal_16x9.jpg?w=1200",
+    "rating": 4.4,
+    "seeMoreButton": "Experience Mumbai"
+  },
+  {
+    "id": 12,
+    "country": " Bangladesh",
+    "city": "Dhaka",
+    "image": "https://i.natgeofe.com/k/42e832f5-fd48-43ff-b338-091bdf4048ca/india-tajmahal_16x9.jpg?w=1200",
+    "rating": 4.1,
+    "seeMoreButton": "Experience Bangladesh"
+  }
 ]

@@ -165,9 +165,11 @@ function App() {
           <div className="footer-logo">
             <img className="footer-logo img" src={logo} alt="Logo" />
           </div>
-          <p className="footer-logo-description">Plan easy, Pay less and Experience more. 
-            Unleash the possibilities of enchanting destinations, ensuring your 
-            holiday is wrapped in comfort and convenience.</p>
+          <p className="footer-logo-description">
+            Plan easy, Pay less and Experience more. Unleash the possibilities
+            of enchanting destinations, ensuring your holiday is wrapped in
+            comfort and convenience.
+          </p>
         </div>
 
         <div className="footer-column">

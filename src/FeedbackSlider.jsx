@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
-import feedback from './testimonials.json';
+import feedback from "./testimonials.json";
 
 // FeedbackSlider component
 const FeedbackSlider = () => {
@@ -23,7 +23,11 @@ const FeedbackSlider = () => {
       <Slider {...settings}>
         {feedback.map((getFeedback) => (
           <div key={getFeedback.id} className="feedback-item">
-            <img className="cards-img" src={getFeedback.imgSrc} alt={getFeedback.author} />
+            <img
+              className="cards-img"
+              src={getFeedback.imgSrc}
+              alt={getFeedback.author}
+            />
             <p className="rating">⭐{getFeedback.rating}</p>
             <h2>{getFeedback.author}</h2>
             <h3>{getFeedback.content}</h3>
