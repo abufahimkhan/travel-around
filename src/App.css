@@ -9,7 +9,6 @@ body, h1, h2, p {
     margin: 0;
     padding: 0;
     color: #929090;
-   /* Adjust font size as needed */
 }
 /* Container styles */
 .container {
@@ -32,43 +31,39 @@ body, h1, h2, p {
     z-index: 1000;
 }
 .logo {
-    width: 200px;
-    height: 100px;
+    width: 350px;
+    height: 130px;
 }
 .menu-items {
     padding-top: 15px;
     list-style: none;
     display: flex;
-    gap: 40px;
+    flex-direction: row;
+    gap: 70px;
 }
 .menu-items li a {
     text-decoration: none;
     color: rgb(122, 122, 122);
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 550;
-   /* Make the text bold */
     transition: color 0.3s;
-   /* Add a transition for smooth color change */
 }
 .menu-items li a:hover {
     color: #0698f7;
-   /* Change the color on hover */
 }
 .search-menubar {
     width: 15%;
     height: 35px;
     border-radius: 15cap;
-   /* Make the search bar more round */
     margin-right: 0px;
     padding: 5px;
 }
 .search-icon {
     display: inline-flex;
     width: 50px;
-    height: 20px;
+    height: 25px;
     color: rgb(133, 132, 132);
     font-weight: bold;
-   /* Add this line to make the icon bolder */
 }
 .search-input {
     width: 200px;
@@ -83,12 +78,13 @@ body, h1, h2, p {
 }
 .search-expanded {
     max-width: 200px;
+    
     opacity: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .start-button {
     background-color: #2596fc;
-    color: #ddd;
+    color: #fff;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -103,7 +99,6 @@ body, h1, h2, p {
 .start-button:after {
     content: "";
     background: #ffffff;
-   /* Set overlay color */
     display: block;
     position: absolute;
     padding-top: 300%;
@@ -115,7 +110,6 @@ body, h1, h2, p {
 }
 .start-button:hover {
     background-color: #1f7fd4;
-   /* Change background color on hover */
 }
 .start-button:active:after {
     padding: 0;
@@ -147,7 +141,7 @@ body, h1, h2, p {
     background-attachment: fixed;
     background-position: center center;
     margin: 25cap;
-    width: 65%;
+    width: 75%;
     display: flex;
     z-index: 1;
 }
@@ -159,12 +153,13 @@ body, h1, h2, p {
 .section-cover-one h1 {
     font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
     font-style: normal;
-    font-size: 45px;
+    font-weight: normal;
+    font-size: 55px;
     color: #5f5f5f;
 }
 .section-cover-one p {
     font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     margin-top: 30px;
     margin-bottom: 40px;
     color: #666666;
@@ -174,7 +169,6 @@ body, h1, h2, p {
     height: 60px;
     margin-left: 200px;
     border-radius: 20cap;
-   /* Make the button rounded */
     background-color: #ffff;
     font-weight: bold;
     color: rgb(3, 3, 3) 3b3;
@@ -188,7 +182,6 @@ body, h1, h2, p {
     width: 150px;
     height: 50px;
     border-radius: 20cap;
-   /* Make the button rounded */
     background-color: #ffff;
     font-weight: bold;
     color: rgb(3, 3, 3) 3b3;
@@ -203,7 +196,6 @@ body, h1, h2, p {
     height: fit-content;
     border-radius: 3cap;
 }
-/* Add this style to your existing CSS file */
 .section-search {
     position: absolute;
     background-position: center center;
@@ -270,10 +262,10 @@ body, h1, h2, p {
     margin: -200px;
 }
 /* Cards section*/
-/* ... (Your existing CSS code above) */
 .cards-container {
     display: flex;
     flex-wrap: wrap;
+    padding: 3%;
     gap: 1px;
     justify-content: space-evenly;
     margin-bottom: 5%;
@@ -290,7 +282,7 @@ body, h1, h2, p {
     display: flex;
     flex-direction: column;
     width: 45%;
-    gap: 1rem;
+    /* gap: 1rem; */
 }
 .cards {
     box-sizing: border-box;
@@ -304,14 +296,11 @@ body, h1, h2, p {
     position: relative;
     overflow: hidden;
     display: flex;
-   /* Make the card a flex container */
     flex-direction: column;
-   /* Stack the child elements vertically */
     transition: opacity 1s, max-height 1s;
 }
 .cards-content {
     flex-grow: 1;
-   /* Allow the content to take up remaining space */
 }
 .cards.hidden-card {
     opacity: 0;
@@ -328,13 +317,13 @@ body, h1, h2, p {
     border-radius: 4cap;
     padding: 1cap;
     width: -webkit-fill-available;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
 }
 .cards h3 {
     display: flex;
     width: 100%;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 10px;
     margin-bottom: 0px;
     margin-left: 5px;
@@ -370,19 +359,20 @@ body, h1, h2, p {
     display: flex;
     width: fit-content;
     margin-left: 9px;
-    font-size: 15px;
+    font-size: 20px;
 }
 .seemore {
-    border: 1px solid #858585;
-    padding: 15px 20px;
+    height: 60px;
+    border: 2px solid #858585;
+    padding: 15px 30px;
     border-radius: 5cap;
     font-weight: 600;
-    font-size: 10px;
+    font-size: 15px;
     color: #464141;
     background-color: #ffff;
-    margin-left: 80px;
-    margin-top: 25px;
-    align-self: flex-end;
+    margin-left: 100px;
+    margin-top: 20px;
+    align-self: auto;
 }
 .seemore:hover, .seemore:focus {
     transform: scale(1);
@@ -423,7 +413,6 @@ body, h1, h2, p {
 }
 .see-more-btn:active {
     animation: clickAnimation 0.3s;
-   /* Apply the click animation on button press */
 }
 .cards-header {
     margin: auto;
@@ -438,19 +427,68 @@ body, h1, h2, p {
     justify-content: flex-start;
 }
 .cards-header h1 {
-    font-family: "Helvetica";
-    font-style: normal;
-    font-size: 40px;
+    font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
+    font-weight: normal;
+    font-size: 50px;
     color: #5f5f5f;
 }
 .cards-header p {
     font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
     color: #7e7e7e;
-    font-size: 15px;
+    font-size: 20px;
     font-style: oblique;
-    font-weight: 500;
+    font-weight: normal;
     margin-top: 20px;
     margin-bottom: 25px;
+}
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f3f3f3;
+    border-radius: 4cap;
+    padding: 3%;
+    gap: 1px;
+    justify-content: space-evenly;
+    opacity: 1;
+    transition: opacity 1s, max-height 1s;
+}
+.service-cards {
+    box-sizing: border-box;
+    width: 27%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 2px solid #dad4d4;
+    border-radius: 4cap;
+    margin-top: 40px;
+    text-align: justify;
+    font-family: "Helvetica";
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: opacity 1s, max-height 1s;
+}
+.service-cards:hover {
+    transform: scale(1.01);
+}
+.service-more {
+    padding: 15px 30px;
+    border-radius: 5cap;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    align-self: flex-start;
+    border: 1px solid #a4a3a3;
+    color: #464141;
+    background-color: #ffff;
+}
+.service-more:hover, .service-more:focus {
+    transform: scale(1);
+}
+.service-more:active {
+    background-color: #ffffff;
+    box-shadow: 0 0px #666;
+    transform: translateY(4px);
 }
 .service-title {
     display: flex;
@@ -468,58 +506,7 @@ body, h1, h2, p {
     font-style: normal;
     font-weight: 600;
 }
-.service-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1px;
-    justify-content: space-evenly;
-    background-color: #f3f3f3;
-    margin-bottom: 5%;
-    opacity: 1;
-    transition: opacity 1s, max-height 1s;
-}
-.service-cards {
-    box-sizing: border-box;
-    width: 27%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border: 2px solid #dad4d4;
-    border-radius: 4cap;
-    margin-top: 40px;
-    text-align: justify;
-    font-family: "Helvetica";
-    position: relative;
-    overflow: hidden;
-    display: flex;
-   /* Make the card a flex container */
-    flex-direction: column;
-   /* Stack the child elements vertically */
-    transition: opacity 1s, max-height 1s;
-}
-.service-cards:hover {
-    transform: scale(1.01);
-}
-.service-more {
-    padding: 15px 20px;
-    border-radius: 5cap;
-    font-weight: 600;
-    font-size: 10px;
-    margin-left: 20px;
-    margin-bottom: 25px;
-    align-self: flex-start;
-    border: 1px solid #a4a3a3;
-    color: #464141;
-    background-color: #ffff;
-}
-.service-more:hover, .service-more:focus {
-    transform: scale(1);
-}
-.service-more:active {
-    background-color: #ffffff;
-    box-shadow: 0 0px #666;
-    transform: translateY(4px);
-}
-/* ... (Your existing CSS code below) */
+
 .feedback-slider {
     margin: 30px 0;
     max-width: 50%;
@@ -554,8 +541,6 @@ body, h1, h2, p {
     padding: 5px 10px;
     border-radius: 5cap;
     z-index: 1;
-   /* Ensure the rating is above the image */
-   /* Adjust the spacing between content and rating */
 }
 .feedback-item h2 {
     display: block;
@@ -566,18 +551,13 @@ body, h1, h2, p {
 .feedback-item h3 {
     margin-left: 25px;
     color: #333;
-   /* Adjust the color as needed */
     font-size: 15px;
-   /* Adjust the font size as needed */
     margin-right: 45px;
     font-weight: bold;
-   /* Make the heading bold */
 }
 .feedback-item p {
     color: #fff;
-   /* Adjust the color as needed */
     font-size: 16px;
-   /* Adjust the font size as needed */
 }
 .feedback-card {
     box-sizing: border-box;
@@ -588,10 +568,7 @@ body, h1, h2, p {
     text-align: justify;
     font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
     position: relative;
-   /* Add relative positioning */
     overflow: hidden;
-   /* 
-   /* Add transition for hover effect */
 }
 @media (max-width: 700px) {
     .feedback-slider {
@@ -620,10 +597,10 @@ body, h1, h2, p {
     position: relative;
 }
 .explore input {
-    width: 60%;
-    height: 100px;
+    width: 61%;
+    height: 150px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
     color: #868484;
     padding: 35px;
     margin: 11px;
@@ -645,16 +622,16 @@ body, h1, h2, p {
     color: #ddd;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     width: 15%;
-    height: 85px;
+    height: 130px;
     border-radius: 10cap;
     border: 2px solid #2596fc;
     transition: background-color 0.3s;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     position: absolute;
-    right: 21%;
+    right: 20%;
 }
 .explore button:after {
     content: "";
@@ -709,13 +686,20 @@ body, h1, h2, p {
 }
 .footer-logo img {
     width: 350px;
-    height: 165px;
+    height: 130px;
+}
+.footer-logo-description{
+    display: flex;
+    font-size: 20px;
+    margin-left: 85px;
+    text-align: left;
 }
 .footer-title {
-    color: #4a4b4c;
+    color: #727374;
     text-align: left;
-    margin-top: 70px;
-    font-size: 25px;
+    margin-left: 12px;
+    margin-top: 50px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 .footer-description, .footer-resources {
@@ -726,19 +710,19 @@ body, h1, h2, p {
     font-weight: 600;
     font-size: 14px;
     text-align: left;
-    padding: 0px;
+    padding: 15px;
 }
 .footer-resources li {
     list-style: none;
     margin-bottom: 10px;
 }
 .footer-resources a {
-    font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
+    font-weight: 600;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
     margin-top: 30px;
     margin-bottom: 40px;
-    color: #666666;
+    color: #a2a2a2;
 }
 .footer-resources a:hover {
     text-decoration: underline;

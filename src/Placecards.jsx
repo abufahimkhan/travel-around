@@ -27,11 +27,8 @@ function Placecards() {
             />
             <div className="positions-horizontal">
               <div className="positions-vertical">
-              <h3 className="title">
-              🌎{getData.country}
-              
-              </h3>
-              <p className="city">🔰 {getData.city}</p>
+                <h3 className="title">🌎{getData.country}</h3>
+                <p className="city">🔰 {getData.city}</p>
               </div>
               <button className="seemore">See more</button>
             </div>
