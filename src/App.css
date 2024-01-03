@@ -268,14 +268,14 @@ body, h1, h2, p {
     padding: 3%;
     gap: 1px;
     justify-content: space-evenly;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     opacity: 1;
     transition: opacity 1s, max-height 1s;
 }
 .positions-horizontal {
     margin-left: 2%;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 15px;
     display: inline-flex;
 }
 .positions-vertical {
@@ -371,7 +371,7 @@ body, h1, h2, p {
     color: #464141;
     background-color: #ffff;
     margin-left: 100px;
-    margin-top: 20px;
+    margin-top: 15px;
     align-self: auto;
 }
 .seemore:hover, .seemore:focus {
