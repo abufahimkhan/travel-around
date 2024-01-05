@@ -4,7 +4,7 @@ import "./App.css";
 import logo from "./assets/logo.png";
 import Placecards from "./Placecards";
 import Servicecards from "./Servicecards";
-import LandingPage from "./LandingPage"; // Import the LandingPage component
+import LandingPage from "./LandingPage"; 
 import Explore from "./Explore";
 import ContactUs from "./ContactUs";
 
@@ -19,7 +19,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/subdirectory">
       <div className={`container ${menuOpen ? "menu-open" : ""}`}>
         <header className="header">
           <img className="logo" src={logo} alt="Logo" />
