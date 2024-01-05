@@ -24,7 +24,7 @@ function Placecards() {
             }`}
             key={getData.id}
           >
-            a<p className="place-rating">⭐{getData.rating}</p>
+            <p className="place-rating">⭐{getData.rating}</p>
             <img
               className="cards-img"
               src={getData.image}
