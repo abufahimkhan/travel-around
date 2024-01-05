@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import "./App.css";
 import logo from "./assets/logo.png";
 import Placecards from "./Placecards";
@@ -7,6 +7,7 @@ import Servicecards from "./Servicecards";
 import LandingPage from "./LandingPage"; 
 import Explore from "./Explore";
 import ContactUs from "./ContactUs";
+import LoginForm from "./LoginForm";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -52,9 +53,11 @@ function App() {
                 />
               </li>
               <li>
-                <button type="button" className="start-button">
-                  Get Started
-                </button>
+                <Link to="/login">
+                  <button type="button" className="start-button">
+                    Get Started
+                  </button>
+                </Link>
               </li>
             </ul>
           </nav>
@@ -71,6 +74,7 @@ function App() {
           <Route path="Service" element={<Servicecards />} />
           <Route path="explore" element={<Explore />} />
           <Route path="contact" element={<ContactUs />} />
+          <Route path="login" element={<LoginForm/>}/>
           {/* Add other routes as needed */}
         </Routes>
         <hr />

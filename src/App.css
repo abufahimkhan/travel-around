@@ -923,3 +923,43 @@ p {
     font-size: 12px;
   }
 }
+/* login signup */
+/* AuthForm.css */
+.auth-form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.auth-form button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background-color: #45a049;
+}
+
+.auth-form p {
+  margin-top: 15px;
+}
