@@ -19,7 +19,7 @@ function App() {
   };
 
   return (
-    <Router basename="/subdirectory">
+    <Router>
       <div className={`container ${menuOpen ? "menu-open" : ""}`}>
         <header className="header">
           <img className="logo" src={logo} alt="Logo" />
