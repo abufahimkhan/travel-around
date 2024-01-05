@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import "./App.css";
 import logo from "./assets/logo.png";
 import Placecards from "./Placecards";
@@ -26,19 +26,19 @@ function App() {
           <nav className={`nav ${menuOpen ? "open" : ""}`}>
             <ul className="menu-items">
               <li>
-                <a href="/">Home</a>
+              <Link><a href="/">Home</a></Link>
               </li>
               <li>
-                <a href="places">Travels</a>
+                <Link><a href="places">Travels</a></Link>
               </li>
               <li>
-                <a href="Service">Services</a>
+              <Link><a href="Service">Services</a></Link>
               </li>
               <li>
-                <a href="explore">About us</a>
+              <Link><a href="explore">About us</a></Link>
               </li>
               <li>
-                <a href="contact">Contact Us</a>
+              <Link><a href="contact">Contact Us</a></Link>
               </li>
               <li>
                 <p className="search-icon" onClick={handleExpand}>
