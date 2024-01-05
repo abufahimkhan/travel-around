@@ -12,6 +12,10 @@ function Placecards() {
 
   return (
     <div className={`${menuOpen ? "menu-open" : ""}`}>
+      <div className="cards-header">
+        <h1>Popular destinations</h1>
+        <p>Unleash your Wanderlust with travel around</p>
+      </div>
       <div className="cards-container">
         {records.map((getData, index) => (
           <div
@@ -20,7 +24,7 @@ function Placecards() {
             }`}
             key={getData.id}
           >
-            <p className="place-rating">⭐{getData.rating}</p>
+            a<p className="place-rating">⭐{getData.rating}</p>
             <img
               className="cards-img"
               src={getData.image}
@@ -38,20 +42,20 @@ function Placecards() {
       </div>
 
       {records.length > 3 && (
-  <div className="see-more-container">
-    <button className="see-more-btn" onClick={toggleCards}>
-      {showAllCards ? (
-        <>
-        <FaChevronUp />
-        </>
-      ) : (
-        <>
-        <FaChevronDown />
-        </>
+        <div className="see-more-container">
+          <button className="see-more-btn" onClick={toggleCards}>
+            {showAllCards ? (
+              <>
+                <FaChevronUp />
+              </>
+            ) : (
+              <>
+                <FaChevronDown />
+              </>
+            )}
+          </button>
+        </div>
       )}
-    </button>
-  </div>
-)}
     </div>
   );
 }

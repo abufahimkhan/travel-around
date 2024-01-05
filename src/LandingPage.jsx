@@ -53,20 +53,10 @@ function LandingPage() {
           </section>  */}
       </section>
 
-      <div className="cards-header">
-        <h1>Popular destinations</h1>
-        <p>Unleash your Wanderlust with travel around</p>
-      </div>
       <Placecards />
 
-      <div className="service-container">
-        <div className="cards-header">
-          <h1>Our Services</h1>
-          <p>Plan Easy, Pay less and Experience more</p>
-        </div>
+      <Servicecards />
 
-        <Servicecards />
-      </div>
       <div className="feedback-slider-container">
         <div className="cards-header">
           <h1>Love From Our Travellers</h1>
@@ -95,9 +85,7 @@ function LandingPage() {
             <img className="footer-logo img" src={logo} alt="Logo" />
           </div>
           <p className="footer-logo-description">
-            Plan easy, Pay less and Experience more. Unleash the possibilities
-            of enchanting destinations, ensuring your holiday is wrapped in
-            comfort and convenience.
+            Plan easy, Pay less and Experience more.
           </p>
         </div>
 

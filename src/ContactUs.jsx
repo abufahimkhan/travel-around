@@ -61,7 +61,6 @@ function ContactUs() {
           </ul>
         </div>
       </footer>
-      <p className="copyright">&copy; 2023 Your Company</p>
     </div>
   );
 }

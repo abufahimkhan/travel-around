@@ -395,11 +395,11 @@ p {
   transition: height 1.5s ease;
 }
 .see-more-btn {
-    border: none;
-    background-color: #ffffff;
-    color: #aaa8a8;
-    font-size: 5cap;
-    border-radius: 5px;
+  border: none;
+  background-color: #ffffff;
+  color: #aaa8a8;
+  font-size: 5cap;
+  border-radius: 5px;
 }
 .see-more-btn:hover {
   background-color: #ffffff;
