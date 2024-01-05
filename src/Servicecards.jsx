@@ -4,8 +4,6 @@ import "./App.css";
 import services from "./service.json";
 
 function Servicecards() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <div className="service-container">
       {services.map((getservics) => (

@@ -800,7 +800,7 @@ p {
     transform: rotate(45deg) translate(-5px, -6px);
   }
   .container.menu-open {
-    overflow: hidden;
+    overflow: visible;
   }
 }
 /* Media query for screens smaller than 1200px */
