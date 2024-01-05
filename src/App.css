@@ -685,7 +685,7 @@ p {
   }
 }
 .footer {
-  gap: 8%;
+  gap: 10%;
   display: flex;
   justify-content: space-around;
   padding: 20px;
@@ -696,7 +696,7 @@ p {
 }
 .footer-logo img {
   width: 350px;
-  height: 130px;
+  height: 140px;
   margin-left: 60px;
 }
 .footer-logo-description {
@@ -708,6 +708,7 @@ p {
 .footer-title {
   color: #727374;
   text-align: left;
+  font-weight: 600;
   margin-left: 12px;
   margin-top: 50px;
   font-size: 30px;
