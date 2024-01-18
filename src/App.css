@@ -57,7 +57,7 @@ p {
 .search-menubar {
   width: 15%;
   height: 35px;
-  border-radius: 15cap;
+  border-radius: 15px;
   margin-right: 0px;
   padding: 5px;
 }
@@ -366,22 +366,24 @@ p {
   font-size: 20px;
 }
 .seemore {
-  height: 60px;
+  height: 55px;
   border: 2px solid #858585;
-  padding: 15px 30px;
-  border-radius: 5cap;
+  padding: 12px 20px;
+  border-radius: 10cap;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 17px;
   color: #464141;
   background-color: #ffff;
-  margin-left: 100px;
+  margin-left: auto;
   margin-top: 15px;
-  align-self: auto;
+  display: block;
 }
+
 .seemore:hover,
 .seemore:focus {
   transform: scale(1);
 }
+
 .seemore:active {
   background-color: #ffffff;
   box-shadow: 0 0px #666;
