@@ -10,5 +10,4 @@ const placeSchema=new mongoose.Schema([
         seeMoreButton: String
     }
 ]);
-
 const PModel=mongoose.model('PModel',placeSchema);
