@@ -1,7 +1,7 @@
 # React + Vite
 Travelling agency website.Travelling agency website.
 
-Travel Around,' a dynamic travel platform using: React, Tailwind CSS, and custom styling for a visually stunning UI. Leveraged MongoDB, Express, and Node.js for seamless backend functionality. Excited to showcase how technology can inspire wanderlust and enhance user experiences. 
+Travel Around,' a dynamic travel platform using: React, Tailwind CSS, and custom styling for a visually stunning UI. Leveraged MongoDB, Express, and Node.js for seamless backend functionality (Desktop version and Responsiveness for smaller devices ongoing). Excited to showcase how technology can inspire wanderlust and enhance user experiences. 
  🌍 Website link: https://travel-around.vercel.app/
  🌍Figma Design link: [https://www.behance.net/gallery/184310051/Travel-Agency-Landing-Page/modules/1041438717](https://www.behance.net/gallery/184310051/Travel-Agency-Landing-Page/modules/1041438717)
 
